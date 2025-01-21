@@ -11,7 +11,7 @@ public class BodyPartRenderer : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private void Start()
     {
-        spriteRenderer.GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
 

@@ -17,7 +17,7 @@ public class DebugManager : MonoBehaviour
     void Update()
     {
         // Toggle the debug menu with the F key
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F12))
         {
             if (debug != null)
             {

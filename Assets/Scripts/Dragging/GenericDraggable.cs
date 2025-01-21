@@ -5,6 +5,9 @@ using UnityEngine;
 public class GenericDraggable : MonoBehaviour, IDraggable
 {
     public bool canDrag;
+
+    [SerializeField] private Color colour;
+    [SerializeField] private Color dragColour;
     public bool isDraggable()
     {
         return canDrag;

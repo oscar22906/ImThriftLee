@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DragCursorTest : MonoBehaviour, IDraggable
 {
-    public bool debugMsg = false;
-    public bool canDrag;
+    [SerializeField] private bool debugMsg = false;
+    [SerializeField] private bool canDrag;
     [Tooltip("Toggles custom drag sprite on drag")]
-    public bool dragSprite;
-    public GameObject grasp;
+    [SerializeField] private bool dragSprite;
+    [SerializeField] private GameObject grasp;
+
+    [SerializeField] private Color colour;
+    [SerializeField] private Color dragColour;
+
     private void Start()
     {
         grasp.SetActive(false);
