@@ -1,0 +1,4 @@
+repository "PNCGame@OscarsFace@cloud"
+  path "/"
+    br "/main"
+    co "/main"
