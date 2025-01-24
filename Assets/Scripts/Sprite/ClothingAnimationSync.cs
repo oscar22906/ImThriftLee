@@ -1,32 +1,22 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ClothingAnimationSync : MonoBehaviour
 {
-    private Animator clothingAnimator;
+    public Animator animator;
+    public UnityEvent<int> onFrameChanged; // Event for notifying frame changes
 
-    private void Start()
+    private int lastFrame = -1;
+
+    void Update()
     {
-        clothingAnimator = GetComponent<Animator>();
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        int currentFrame = Mathf.FloorToInt(stateInfo.normalizedTime * stateInfo.length * 24); // Assuming 24 FPS animation
 
-        // Subscribe to frame change events
-        AnimationManager.Instance.OnFrameChanged += SyncFrame;
-    }
-
-    private void OnDestroy()
-    {
-        // Unsubscribe to prevent memory leaks
-        if (AnimationManager.Instance != null)
+        if (currentFrame != lastFrame)
         {
-            AnimationManager.Instance.OnFrameChanged -= SyncFrame;
+            lastFrame = currentFrame;
+            onFrameChanged?.Invoke(currentFrame);
         }
-    }
-
-    /// <summary>
-    /// Syncs the clothing animation to the specified frame.
-    /// </summary>
-    /// <param name="frame">The frame to sync to.</param>
-    private void SyncFrame(int frame)
-    {
-        clothingAnimator.Play(0, 0, frame / (float)clothingAnimator.GetCurrentAnimatorStateInfo(0).length);
     }
 }

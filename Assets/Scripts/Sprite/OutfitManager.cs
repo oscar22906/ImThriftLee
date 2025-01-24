@@ -15,7 +15,7 @@ public class OutfitManager : MonoBehaviour
     {
         foreach (BodyPartRenderer bpr in bodyPartRenderers)
         {
-            bpr.UpdateClothing(currentFrame); // 
+            bpr.UpdateClothing(currentFrame);
         }
     }
 

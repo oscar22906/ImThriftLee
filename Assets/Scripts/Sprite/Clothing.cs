@@ -10,6 +10,8 @@ public class Clothing : ScriptableObject
     public Sprite[] sprites; // all animation frames for the item in order
     public BodyPart bodyPart;
     public OutfitSet outfitSet;
+
+    public Sprite[] animations;
 }
 public enum OutfitSet
 {
