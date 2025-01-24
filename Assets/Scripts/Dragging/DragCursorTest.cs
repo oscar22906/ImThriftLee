@@ -31,7 +31,7 @@ public class DragCursorTest : MonoBehaviour, IDraggable
         }
         if (dragSprite)
         {
-            GetComponent<SpriteRenderer>().color = Color.black;
+            GetComponent<SpriteRenderer>().color = dragColour;
             CursorManager.Instance.HideCursor();
             grasp.SetActive(true);
         }
@@ -45,7 +45,7 @@ public class DragCursorTest : MonoBehaviour, IDraggable
         }
         if (dragSprite)
         {
-            GetComponent<SpriteRenderer>().color = Color.white;
+            GetComponent<SpriteRenderer>().color = colour;
             CursorManager.Instance.ShowCursor();
 
             grasp.SetActive(false);

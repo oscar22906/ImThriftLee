@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GenericDial : MonoBehaviour, IDial, IElement
+public class GenericDial : MonoBehaviour, IDial
 {
     [SerializeField] public float Value { get; private set; }
     public float MinRotation = 0f;
@@ -29,5 +29,6 @@ public class GenericDial : MonoBehaviour, IDial, IElement
     public void OnDragEnd() { }
 
     public void OnHoverEnter() { }
+
     public void OnHoverExit() { }
 }

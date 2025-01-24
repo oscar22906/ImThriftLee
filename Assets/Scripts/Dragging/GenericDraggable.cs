@@ -16,13 +16,13 @@ public class GenericDraggable : MonoBehaviour, IDraggable
     public void OnDragBegin()
     {
         Debug.Log("Started Dragging");
-        GetComponent<SpriteRenderer>().color = Color.black;
+        GetComponent<SpriteRenderer>().color = dragColour;
     }
 
     public void OnDragEnd()
     {
         Debug.Log("Stopped Dragging");
-        GetComponent<SpriteRenderer>().color = Color.white;
+        GetComponent<SpriteRenderer>().color = colour;
     }
 
     public void OnHoverEnter()
