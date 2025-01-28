@@ -8,7 +8,8 @@ public class DraggingManager : MonoBehaviour
     private Vector2 lastMousePosition;
     private Camera mainCamera;
 
-    [SerializeField] private float precisionFactor = 0.5f; // apply when shift is held
+    [SerializeField] private Collider2D maskCollider;
+    [SerializeField] private float precisionFactor = 0.5f; // Apply when Shift is held
 
     private void Start()
     {
@@ -29,10 +30,10 @@ public class DraggingManager : MonoBehaviour
             if (hit.collider != null)
             {
                 IDraggable draggable = hit.collider.GetComponent<IDraggable>();
-                if (draggable != null && draggable.isDraggable())
+                if (draggable != null && draggable.IsDraggable())
                 {
                     currentDraggable = draggable;
-                    currentDial = draggable as IDial; // Check if it's also a dial
+                    currentDial = draggable as IDial;
                     if (currentDraggable is MonoBehaviour draggableObject)
                     {
                         draggableObject.GetComponent<Collider2D>().enabled = false;
@@ -67,7 +68,7 @@ public class DraggingManager : MonoBehaviour
         Vector2 currentMousePosition = Input.mousePosition;
         Vector2 delta = currentMousePosition - lastMousePosition;
 
-        // precision factor if shift is held
+        // Precision factor if shift is held
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
             delta *= precisionFactor;
@@ -80,17 +81,26 @@ public class DraggingManager : MonoBehaviour
     void DragObject()
     {
         Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0f; // assuming 2D
+        mousePos.z = 0f;
 
         if (currentDraggable is MonoBehaviour draggableObject)
         {
             Vector3 currentPos = draggableObject.transform.position;
             Vector3 newPos = mousePos;
 
-            // precision factor if shift is held
+            // Restrict dragging for certain types outside the mask collider
+            if (maskCollider != null && currentDraggable.Type != IDraggable.DragType.Sticker)
+            {
+                if (maskCollider.OverlapPoint(mousePos))
+                {
+                    return;
+                }
+            }
+
+            // Precision factor if Shift is held
             if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             {
-                newPos = Vector3.Lerp(currentPos, newPos, precisionFactor); // doest actly work :(
+                newPos = Vector3.Lerp(currentPos, newPos, precisionFactor);
             }
 
             draggableObject.transform.position = newPos;
@@ -99,7 +109,7 @@ public class DraggingManager : MonoBehaviour
 
     void HandleDragEnd()
     {
-        if (currentDial == null) // handle drops for non-dial objects
+        if (currentDial == null) // Handle drops for non-dial objects
         {
             HandleDrop();
         }

@@ -3,13 +3,16 @@ using UnityEngine;
 public class GenericDial : MonoBehaviour, IDial
 {
     [SerializeField] public float Value { get; private set; }
+
+    public IDraggable.DragType Type => IDraggable.DragType.Generic;
+
     public float MinRotation = 0f;
     public float MaxRotation = 360f;
 
     [SerializeField] private float sensitivity = 1f;
     [SerializeField] private bool useHorizontalDrag = false; // If false, use vertical drag
 
-    public bool isDraggable() { return true; }
+    public bool IsDraggable() { return true; }
 
     public void OnDialDrag(float deltaX, float deltaY)
     {

@@ -14,11 +14,13 @@ public class DragCursorTest : MonoBehaviour, IDraggable
     [SerializeField] private Color colour;
     [SerializeField] private Color dragColour;
 
+    public IDraggable.DragType Type => IDraggable.DragType.Generic;
+
     private void Start()
     {
         grasp.SetActive(false);
     }
-    public bool isDraggable()
+    public bool IsDraggable()
     {
         return canDrag;
     }

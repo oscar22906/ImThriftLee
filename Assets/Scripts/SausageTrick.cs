@@ -7,6 +7,9 @@ public class SausageTrick : MonoBehaviour, IDraggable
     [SerializeField] private Animator trickAnimator;
     private SpriteRenderer spriteRenderer;
     private Color color;
+
+    public IDraggable.DragType Type => IDraggable.DragType.Generic;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -16,7 +19,7 @@ public class SausageTrick : MonoBehaviour, IDraggable
         }
     }
 
-    public bool isDraggable()
+    public bool IsDraggable()
     {
         return true;
     }
@@ -43,11 +46,11 @@ public class SausageTrick : MonoBehaviour, IDraggable
 
     public void OnHoverEnter()
     {
-        return;
+        print("hover enter");
     }
 
     public void OnHoverExit()
     {
-        return;
+        print("hover exit");
     }
 }

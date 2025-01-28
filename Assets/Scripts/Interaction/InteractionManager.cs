@@ -12,7 +12,6 @@ public class InteractionManager : MonoBehaviour
         DetectHover();
         DetectClick();
     }
-
     void DetectHover()
     {
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -25,25 +24,18 @@ public class InteractionManager : MonoBehaviour
 
             if (interactable != null)
             {
-                // Handle hover actions
                 if (currentInteractable != interactable)
                 {
-                    // hovering over a new object
                     currentInteractable = interactable;
-                    OnHoverStart(interactable);
                 }
             }
             else if (currentInteractable != null)
             {
-                // no longer hovering over any interactable
-                OnHoverEnd(currentInteractable);
                 currentInteractable = null;
             }
         }
         else if (currentInteractable != null)
         {
-            // no object under the mouse
-            OnHoverEnd(currentInteractable);
             currentInteractable = null;
         }
     }
@@ -54,15 +46,5 @@ public class InteractionManager : MonoBehaviour
         {
             currentInteractable.Interact();
         }
-    }
-
-    void OnHoverStart(IInteractable interactable)
-    {
-        interactable.OnHoverEnter();
-    }
-
-    void OnHoverEnd(IInteractable interactable)
-    {
-        interactable.OnHoverExit();
     }
 }

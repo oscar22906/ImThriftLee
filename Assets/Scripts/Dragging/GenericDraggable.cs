@@ -8,7 +8,10 @@ public class GenericDraggable : MonoBehaviour, IDraggable
 
     [SerializeField] private Color colour;
     [SerializeField] private Color dragColour;
-    public bool isDraggable()
+
+    public IDraggable.DragType Type => IDraggable.DragType.Generic;
+
+    public bool IsDraggable()
     {
         return canDrag;
     }
