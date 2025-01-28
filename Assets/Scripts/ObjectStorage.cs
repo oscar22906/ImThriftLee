@@ -1,9 +1,5 @@
-using NUnit.Framework;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.SceneManagement;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class ObjectStorage : MonoBehaviour, IReceptacle
 {

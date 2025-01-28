@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Rendering.CameraUI;
 // Controlls all body part renderers, calling methods from all or one.
 // Important - Player animation needs to reset to first frame when clothing is set.
 public class OutfitManager : MonoBehaviour

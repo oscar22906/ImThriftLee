@@ -15,6 +15,8 @@ public class GenericSticker : MonoBehaviour, IDraggable
 
     private float stickerMoveValue = 0f;
 
+    private bool dragging;
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -29,22 +31,28 @@ public class GenericSticker : MonoBehaviour, IDraggable
 
     public void OnDragBegin()
     {
-        Animate(minValue, maxValue);
+        dragging = true;
     }
 
     public void OnDragEnd()
     {
-        Animate(maxValue, minValue);
+        dragging = false;
+        Animate();
     }
 
-    void Animate(float start, float end)
+
+    private void FixedUpdate()
     {
-        if (material == null) return;
-        if (Random.Range(0,2) == 0)
+        if (dragging)
         {
-            end = -end;
-            start = -start;
+            Animate();
         }
+    }
+    void Animate() // Called on FixedUpdate
+    {
+        float motion = Input.GetAxis("Mouse Y");
+
+        float targetValue = Mathf.Clamp(motion * maxValue, -maxValue, maxValue);
 
         DOTween.To(
             () => stickerMoveValue,
@@ -53,14 +61,37 @@ public class GenericSticker : MonoBehaviour, IDraggable
                 stickerMoveValue = x;
                 material.SetFloat("_stickerMove", stickerMoveValue);
             },
-            end,
+            targetValue,
             tweenDuration
-        ).SetEase(Ease.InOutSine)
-         .OnComplete(() =>
-         {
-             stickerMoveValue = end;
-         });
+        )
+        .SetEase(Ease.InOutSine);
     }
+
+
+    //void Animate(float start, float end)
+    //{
+    //    if (material == null) return;
+    //    if (Random.Range(0,2) == 0)
+    //    {
+    //        end = -end;
+    //        start = -start;
+    //    }
+
+    //    DOTween.To(
+    //        () => stickerMoveValue,
+    //        x =>
+    //        {
+    //            stickerMoveValue = x;
+    //            material.SetFloat("_stickerMove", stickerMoveValue);
+    //        },
+    //        end,
+    //        tweenDuration
+    //    ).SetEase(Ease.InOutSine)
+    //     .OnComplete(() =>
+    //     {
+    //         stickerMoveValue = end;
+    //     });
+    //}
     public void OnHoverEnter()
     {
 
