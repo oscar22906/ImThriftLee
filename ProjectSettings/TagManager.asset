@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags:
   - CursorManager
   layers:
@@ -42,3 +42,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: ShopMaskFull
+    uniqueID: 3205130791
+    locked: 0
+  - name: ShopUI
+    uniqueID: 3150656357
+    locked: 0
+  - name: ShopTop
+    uniqueID: 2715377743
+    locked: 0
+  m_RenderingLayers:
+  - Default
+  - ShopUI
