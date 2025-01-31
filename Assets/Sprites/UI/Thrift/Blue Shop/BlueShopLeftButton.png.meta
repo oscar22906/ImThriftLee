@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 26dc1c89ff0aef54781693ad8d5dfa5e
+guid: f748fe7c560e1a14ba737c253a088db7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -114420651069976621
-    second: BlueShopBackgroundOverlay_0
+      213: -1376522812166491504
+    second: BlueShopLeftButton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,14 +49,14 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.71682614, y: 0.23835628}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlueShopBackgroundOverlay_0
+      name: BlueShopLeftButton_0
       rect:
         serializedVersion: 2
-        x: 1565
-        y: 125
-        width: 475
-        height: 501
+        x: 1650
+        y: 372
+        width: 69
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,17 +141,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3df410a260f796ef0800000000000000
-      internalID: -114420651069976621
+      spriteID: 0923893abcb95ece0800000000000000
+      internalID: -1376522812166491504
       vertices: []
       indices: 
       edges: []
       weights: []
-    outline:
-    - - {x: -395, y: -820}
-      - {x: 990, y: -820}
-      - {x: 982, y: 46}
-      - {x: -210, y: 46}
+    outline: []
     customData: 
     physicsShape: []
     bones: []
@@ -165,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BlueShopBackgroundOverlay_0: -114420651069976621
+      BlueShopLeftButton_0: -1376522812166491504
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

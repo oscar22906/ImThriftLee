@@ -9,19 +9,23 @@ public class FlipUp : MonoBehaviour, IUIAnimate
     public float setValue;
     public float fadeDuration = 1.0f;
 
-    public float overshoot = 1.2f;
-    public float period = 0.6f;
+    public float overshoot = 1.0f;
+    public float period = 2f;
 
     SpriteRenderer[] spriteRenderers;
     private List<Material> materials = new List<Material>();
 
-    private void Start()
+    private void Awake()
     {
         spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
         foreach (SpriteRenderer spriteRenderer in spriteRenderers)
         {
             materials.Add(spriteRenderer.material);
         }
+    }
+    private void Start()
+    {
+
     }
 
     public void AnimateEnable()

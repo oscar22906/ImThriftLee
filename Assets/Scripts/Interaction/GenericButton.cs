@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using VInspector;
 
-public class Button : MonoBehaviour, IInteractable
+public class GenericButton : MonoBehaviour, IInteractable
 {
     [Header("Custom Click Event")]
     public UnityEvent onButtonClick;
