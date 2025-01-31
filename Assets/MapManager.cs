@@ -13,6 +13,8 @@ public class MapManager : MonoBehaviour
     private bool isOrangeShopEnabled;
     private bool isBlueShopEnabled;
 
+    ShopManager currentShop;
+
     private void Awake()
     {
         if (Instance == null)
@@ -24,8 +26,6 @@ public class MapManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
-
     }
 
     public bool IsRedShopEnabled => isRedShopEnabled;
@@ -36,11 +36,36 @@ public class MapManager : MonoBehaviour
     {
         DisableAllShops();
 
-        if (shop == redShop) isRedShopEnabled = true;
-        if (shop == orangeShop) isOrangeShopEnabled = true;
-        if (shop == blueShop) isBlueShopEnabled = true;
-
-        shop.gameObject.SetActive(true);
+        if (shop == redShop)
+        {
+            isRedShopEnabled = true;
+            orangeShop.UpdateShop();
+            blueShop.UpdateShop();
+        }
+        if (shop == orangeShop)
+        {
+            isOrangeShopEnabled = true;
+            redShop.UpdateShop();
+            blueShop.UpdateShop();
+        }
+        if (shop == blueShop)
+        {
+            isBlueShopEnabled = true;
+            redShop.UpdateShop();
+            orangeShop.UpdateShop();
+        }
+        print("hurayy");
+        shop.ShowShop();
+    }
+    [Button]
+    public void CloseCurrent()
+    {
+        isRedShopEnabled = false;
+        isOrangeShopEnabled = false;
+        isBlueShopEnabled = false;
+        redShop.UpdateShop();
+        orangeShop.UpdateShop();
+        blueShop.UpdateShop();
     }
 
     public void DisableShop(ShopManager shop)
@@ -52,24 +77,16 @@ public class MapManager : MonoBehaviour
         shop.HideShop();
     }
 
-    [Button]
     private void DisableAllShops()
     {
         isRedShopEnabled = false;
         isOrangeShopEnabled = false;
         isBlueShopEnabled = false;
-
-        redShop.HideShop();
-        orangeShop.HideShop();
-        blueShop.HideShop();
+        //redShop.UpdateShop();
+        //orangeShop.UpdateShop();
+        //blueShop.UpdateShop();
     }
 
-    public void DeactivateAllShops()
-    {
-        redShop.gameObject.SetActive(false);
-        orangeShop.gameObject.SetActive(false);
-        blueShop.gameObject.SetActive(false);
-    }
 
     [Button]
     public void ActivateRedShop() => EnableShop(redShop);

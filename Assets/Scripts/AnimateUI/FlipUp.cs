@@ -6,7 +6,6 @@ using VInspector;
 public class FlipUp : MonoBehaviour, IUIAnimate
 {
     public float tweenDuration = 1.0f;
-    public float setValue;
     public float fadeDuration = 1.0f;
 
     public float overshoot = 1.0f;
@@ -56,15 +55,6 @@ public class FlipUp : MonoBehaviour, IUIAnimate
                 tweenDuration
             )
             .SetEase(Ease.OutElastic, overshoot, period);
-        }
-    }
-
-    [Button]
-    public void SetValue()
-    {
-        foreach (Material material in materials)
-        {
-            material.SetFloat("_Strength", setValue);
         }
     }
 

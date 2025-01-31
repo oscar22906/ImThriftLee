@@ -7,6 +7,7 @@ public class Item : ScriptableObject
     public string itemName;            // Name of the item
     public string description;         // Description
     public Sprite icon;                // Icon
+    public Sprite sprite;
     public ItemType itemType;          // Enum of item type
     public bool canPickUp;
 

@@ -11,12 +11,15 @@ public class ButtonScale : MonoBehaviour, IUIAnimate
     private Transform[] childTransforms;
     private SpriteRenderer[] spriteRenderers;
 
+    Collider2D[] buttonColliders;
+
     void Awake()
     {
         childTransforms = GetComponentsInChildren<Transform>();
         childTransforms = System.Array.FindAll(childTransforms, t => t != transform);
 
         spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
+        buttonColliders = GetComponentsInChildren<Collider2D>();
     }
 
     [Button]
@@ -24,6 +27,10 @@ public class ButtonScale : MonoBehaviour, IUIAnimate
     {
         AnimateFadeIn(fadeDuration);
         AnimateWithStagger();
+        foreach (Collider2D col in buttonColliders)
+        {
+            col.enabled = true;
+        }
     }
 
     [Button]
@@ -31,6 +38,10 @@ public class ButtonScale : MonoBehaviour, IUIAnimate
     {
         AnimateFadeOut(fadeDuration);
         AnimateShrinkAndDisable();
+        foreach(Collider2D col in buttonColliders)
+        {
+            col.enabled = false;
+        }
     }
 
     [Button]
@@ -90,14 +101,6 @@ public class ButtonScale : MonoBehaviour, IUIAnimate
             Tween tween = tf.DOScale(Vector3.zero, duration)
                 .SetEase(Ease.InQuad)
                 .SetDelay(delay);
-
-            if (i == childTransforms.Length - 1)
-            {
-                tween.OnComplete(() =>
-                {
-                    MapManager.Instance?.DeactivateAllShops();
-                });
-            }
         }
     }
 
