@@ -56,6 +56,7 @@ public class MapManager : MonoBehaviour
         }
         print("hurayy");
         shop.ShowShop();
+        shop.gameObject.GetComponent<Collider2D>().enabled = false;
     }
     [Button]
     public void CloseCurrent()
@@ -82,9 +83,9 @@ public class MapManager : MonoBehaviour
         isRedShopEnabled = false;
         isOrangeShopEnabled = false;
         isBlueShopEnabled = false;
-        //redShop.UpdateShop();
-        //orangeShop.UpdateShop();
-        //blueShop.UpdateShop();
+        redShop.UpdateShop();
+        orangeShop.UpdateShop();
+        blueShop.UpdateShop();
     }
 
 
