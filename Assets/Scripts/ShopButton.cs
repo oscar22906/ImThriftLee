@@ -19,15 +19,21 @@ public class ShopButton : MonoBehaviour, IInteractable
         Buy
     }
 
-    Transform buttonTransform;
+
+    private Transform buttonTransform;
+    private Vector3 originalScale;
 
     private void Start()
     {
         buttonTransform = GetComponent<Transform>();
+        originalScale = buttonTransform.localScale;
     }
+
     public void AnimateScale(float duration, float scaleFactor, Transform tf)
     {
-        Vector3 originalScale = tf.localScale;
+        tf.DOKill(); // Stop any ongoing animations
+        tf.localScale = originalScale; // Reset scale
+
         Vector3 targetScale = originalScale * scaleFactor;
 
         tf.DOScale(targetScale, duration / 2)
@@ -43,15 +49,11 @@ public class ShopButton : MonoBehaviour, IInteractable
     public void Interact()
     {
         AnimateScale(duration, scaleFactor, buttonTransform);
-
     }
 
     void AnimateComplete()
     {
-        if (onButtonClick != null)
-        {
-            onButtonClick.Invoke();
-        }
+        onButtonClick?.Invoke();
     }
 
     public bool IsInteractable()
@@ -59,13 +61,7 @@ public class ShopButton : MonoBehaviour, IInteractable
         return true;
     }
 
-    public void OnHoverEnter()
-    {
-        
-    }
+    public void OnHoverEnter() { }
 
-    public void OnHoverExit()
-    {
-        
-    }
+    public void OnHoverExit() { }
 }

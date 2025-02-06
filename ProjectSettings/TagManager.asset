@@ -43,6 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Game Menu
+    uniqueID: 3479128803
+    locked: 0
   - name: ShopMaskFull
     uniqueID: 3205130791
     locked: 0
@@ -56,3 +59,4 @@ TagManager:
   - Default
   - ShopUI
   - ShopUIItem
+  - Game Menu

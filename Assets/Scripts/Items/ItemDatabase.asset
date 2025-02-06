@@ -19,7 +19,7 @@ MonoBehaviour:
     sprites: []
     bodyPart: 1
     outfitSet: 0
-    shop: 0
+    shop: 2
   - itemID: bluePlastic
     itemName: Blue Plastic
     itemIcon: {fileID: -3602151603310072382, guid: 25ab94f4009522340a49bc9a9d35029c, type: 3}

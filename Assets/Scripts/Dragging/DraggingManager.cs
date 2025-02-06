@@ -8,6 +8,7 @@ public class DraggingManager : MonoBehaviour
     private Vector2 lastMousePosition;
     private Camera mainCamera;
 
+    [SerializeField] private bool useMask = false;
     [SerializeField] private Collider2D maskCollider;
     [SerializeField] private float precisionFactor = 0.5f; // Apply when Shift is held
 
@@ -88,12 +89,13 @@ public class DraggingManager : MonoBehaviour
             Vector3 currentPos = draggableObject.transform.position;
             Vector3 newPos = mousePos;
 
-            // Restrict dragging for certain types outside the mask collider
-            if (maskCollider != null && currentDraggable.Type != IDraggable.DragType.Sticker)
-            {
-                if (maskCollider.OverlapPoint(mousePos))
+            if (useMask) {
+                if (maskCollider != null && currentDraggable.Type != IDraggable.DragType.Sticker)
                 {
-                    return;
+                    if (maskCollider.OverlapPoint(mousePos))
+                    {
+                        return;
+                    }
                 }
             }
 
