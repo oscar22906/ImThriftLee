@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: d3a4d23025f515d46bf653f285b8a3a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 623934441099103137
+    second: RIGHTDECOR1_0
+  - first:
+      213: 1578046472710645816
+    second: RIGHTDECOR1_1
+  - first:
+      213: 1995583305277170970
+    second: RIGHTDECOR1_2
+  - first:
+      213: -8797576846039771615
+    second: RIGHTDECOR1_3
+  - first:
+      213: 8282684290465042062
+    second: RIGHTDECOR1_4
+  - first:
+      213: -6616382322430374745
+    second: RIGHTDECOR1_5
+  - first:
+      213: -1166905692936005379
+    second: RIGHTDECOR1_6
+  - first:
+      213: -298351032868141879
+    second: RIGHTDECOR1_7
+  - first:
+      213: 5291106593158480873
+    second: RIGHTDECOR1_8
+  - first:
+      213: 3882324563831120938
+    second: RIGHTDECOR1_9
+  - first:
+      213: -5975500978537967987
+    second: RIGHTDECOR1_10
+  - first:
+      213: 3281266934393783152
+    second: RIGHTDECOR1_11
+  - first:
+      213: 1400770932801217983
+    second: RIGHTDECOR1_12
+  - first:
+      213: 745075768704174841
+    second: RIGHTDECOR1_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 26
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RIGHTDECOR1_0
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1120
+        width: 92
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab08d48119a8a800800000000000000
+      internalID: 623934441099103137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_1
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1208
+        width: 70
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 838e9f4f7e856e510800000000000000
+      internalID: 1578046472710645816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_2
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 1286
+        width: 110
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15eebe617cb1bb10800000000000000
+      internalID: 1995583305277170970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_3
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1176
+        width: 123
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1261997587ab8e580800000000000000
+      internalID: -8797576846039771615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_4
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 926
+        width: 332
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e80e78a7102f270800000000000000
+      internalID: 8282684290465042062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_5
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 1168
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac0d553553ed24a0800000000000000
+      internalID: -6616382322430374745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_6
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1198
+        width: 71
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df81b2e64715ecfe0800000000000000
+      internalID: -1166905692936005379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_7
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 894
+        width: 185
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4068bf05b0cdbf0800000000000000
+      internalID: -298351032868141879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_8
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 1141
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e340f9b969cd6940800000000000000
+      internalID: 5291106593158480873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_9
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 1143
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a246de11f99c0e530800000000000000
+      internalID: 3882324563831120938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_10
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1050
+        width: 90
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ece330581c21da0800000000000000
+      internalID: -5975500978537967987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_11
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 1025
+        width: 88
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073c6c554e6698d20800000000000000
+      internalID: 3281266934393783152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_12
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 786
+        width: 124
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb52f45edb9807310800000000000000
+      internalID: 1400770932801217983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTDECOR1_13
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 150
+        width: 136
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa0d5cc67a075a00800000000000000
+      internalID: 745075768704174841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RIGHTDECOR1_0: 623934441099103137
+      RIGHTDECOR1_1: 1578046472710645816
+      RIGHTDECOR1_10: -5975500978537967987
+      RIGHTDECOR1_11: 3281266934393783152
+      RIGHTDECOR1_12: 1400770932801217983
+      RIGHTDECOR1_13: 745075768704174841
+      RIGHTDECOR1_2: 1995583305277170970
+      RIGHTDECOR1_3: -8797576846039771615
+      RIGHTDECOR1_4: 8282684290465042062
+      RIGHTDECOR1_5: -6616382322430374745
+      RIGHTDECOR1_6: -1166905692936005379
+      RIGHTDECOR1_7: -298351032868141879
+      RIGHTDECOR1_8: 5291106593158480873
+      RIGHTDECOR1_9: 3882324563831120938
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

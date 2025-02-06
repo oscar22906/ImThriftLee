@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2125181fabdc4a549b6540deebcef585, type: 3}
+  m_Name: ItemDatabase
+  m_EditorClassIdentifier: 
+  allItems:
+  - itemID: blackTop
+    itemName: Black Top
+    itemIcon: {fileID: 7679118260052533764, guid: 2d75d1587cc31a742957a88bcb6b8f97, type: 3}
+    sprites: []
+    bodyPart: 1
+    outfitSet: 0
+    shop: 0
+  - itemID: bluePlastic
+    itemName: Blue Plastic
+    itemIcon: {fileID: -3602151603310072382, guid: 25ab94f4009522340a49bc9a9d35029c, type: 3}
+    sprites: []
+    bodyPart: 1
+    outfitSet: 0
+    shop: 0
+  - itemID: craftPaper
+    itemName: Craft Paper
+    itemIcon: {fileID: -4561945730248601883, guid: f61b181223de25549a526699f6ed9ff7, type: 3}
+    sprites: []
+    bodyPart: 2
+    outfitSet: 0
+    shop: 0
+  - itemID: pinkRug
+    itemName: Pink Rug
+    itemIcon: {fileID: 6541885114641172871, guid: 2a1b9d68c50d47947811963599cecf41, type: 3}
+    sprites: []
+    bodyPart: 3
+    outfitSet: 0
+    shop: 0
+  - itemID: redPlastic
+    itemName: Red Plastic
+    itemIcon: {fileID: 2313622411020035007, guid: 06c529c1af934014496d7795be45b497, type: 3}
+    sprites: []
+    bodyPart: 3
+    outfitSet: 0
+    shop: 0

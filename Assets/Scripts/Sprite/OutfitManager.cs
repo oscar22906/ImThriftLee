@@ -20,8 +20,8 @@ public class OutfitManager : MonoBehaviour
     {
         foreach (BodyPartRenderer bpr in bodyPartRenderers)
         {
-            bpr.ApplySet(newClothing.outfitSet);
-            currentSet = newClothing.outfitSet;
+            bpr.ApplySet(newClothing.GetOutfitSet());
+            currentSet = newClothing.GetOutfitSet();
         }
     }
 
@@ -29,7 +29,7 @@ public class OutfitManager : MonoBehaviour
     {
         foreach (BodyPartRenderer bpr in bodyPartRenderers)
         {
-            if (newClothing.bodyPart == bpr.bodyPart)
+            if (newClothing.GetBodyPart() == bpr.bodyPart)
             {
                 bpr.SetClothing(newClothing);
             }

@@ -4,9 +4,7 @@ using UnityEngine;
 public class GenericSticker : MonoBehaviour, IDraggable
 {
     [Tooltip("e.g 3.15f")]
-    [SerializeField] float maxValue = 0f;
-    [Tooltip("e.g 0f")]
-    [SerializeField] float minValue = 3.15f;
+    [SerializeField] float maxValue = 3.15f;
     [SerializeField] private float tweenDuration;
 
     SpriteRenderer spriteRenderer;

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - CursorManager
+  - OneShot
   layers:
   - Default
   - TransparentFX
@@ -54,3 +55,4 @@ TagManager:
   m_RenderingLayers:
   - Default
   - ShopUI
+  - ShopUIItem

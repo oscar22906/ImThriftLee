@@ -59,7 +59,7 @@ public class ButtonScale : MonoBehaviour, IUIAnimate
         {
             Transform tf = childTransforms[i];
             float delay = i * popDelay;
-
+            Vector3 originalScale = tf.localScale;
             tf.localScale = Vector3.zero;
             tf.DOScale(Vector3.one * scaleFactor, duration / 2)
                 .SetEase(Ease.OutQuad)

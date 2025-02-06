@@ -10,17 +10,29 @@ public class ShopManager : MonoBehaviour
 
     public GameObject assets;
 
-    bool disabling = false; // stop multiple calls
+    public Shop shop;
+
+    bool disabling = false;
+
+    [SerializeField] private float minBlinkTime = 2f;
+    [SerializeField] private float maxBlinkTime = 5f;
+    private Coroutine blinkCoroutine;
 
     private void OnEnable()
     {
         iUIAnimates = GetComponentsInChildren<IUIAnimate>();
         animator = GetComponentInChildren<Animator>();
         StartCoroutine(WaitToEnable());
-        print(MapManager.Instance);
+        StartBlinking();
     }
-    [Button] 
-    public void ShowShop() // call to start all animations
+
+    private void OnDisable()
+    {
+        StopBlinking();
+    }
+
+    [Button]
+    public void ShowShop()
     {
         if (disabling)
         {
@@ -28,6 +40,7 @@ public class ShopManager : MonoBehaviour
             return;
         }
         print("Showing shop");
+        MapManager.Instance.DisableColliders();
         assets.SetActive(true);
         foreach (IUIAnimate anim in iUIAnimates)
         {
@@ -37,12 +50,16 @@ public class ShopManager : MonoBehaviour
         {
             animator.SetTrigger("PopUp");
         }
+        ItemDisplay.Instance.OpenShop(shop);
+        StartBlinking();
     }
+
     [Button]
-    public void HideShop() // call to start hide animations
+    public void HideShop()
     {
         if (disabling)
             return;
+        MapManager.Instance.EnableColliders();
         if (animator != null)
         {
             animator.SetTrigger("Down");
@@ -52,12 +69,12 @@ public class ShopManager : MonoBehaviour
             anim.AnimateDisable();
         }
         StartCoroutine(WaitToDisable());
-
+        StopBlinking();
     }
 
     public void UpdateShop()
     {
-        if (this == MapManager.Instance?.redShop) // hide on start
+        if (this == MapManager.Instance?.redShop)
         {
             if (!MapManager.Instance.IsRedShopEnabled)
                 HideShop();
@@ -78,7 +95,7 @@ public class ShopManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         UpdateShop();
     }
-    IEnumerator WaitToDisable() // wait until 
+    IEnumerator WaitToDisable()
     {
         disabling = true;
         yield return new WaitForSeconds(disableDelay);
@@ -86,4 +103,32 @@ public class ShopManager : MonoBehaviour
         disabling = false;
     }
 
+    private void StartBlinking()
+    {
+        if (blinkCoroutine == null)
+        {
+            blinkCoroutine = StartCoroutine(BlinkRoutine());
+        }
+    }
+
+    private void StopBlinking()
+    {
+        if (blinkCoroutine != null)
+        {
+            StopCoroutine(blinkCoroutine);
+            blinkCoroutine = null;
+        }
+    }
+
+    IEnumerator BlinkRoutine()
+    {
+        while (assets.activeSelf)
+        {
+            yield return new WaitForSeconds(Random.Range(minBlinkTime, maxBlinkTime));
+            if (animator != null && assets.activeSelf)
+            {
+                animator.SetTrigger("Blink");
+            }
+        }
+    }
 }
