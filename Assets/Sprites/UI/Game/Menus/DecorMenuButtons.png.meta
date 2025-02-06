@@ -52,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,13 +139,19 @@ TextureImporter:
         y: 997
         width: 372
         height: 248
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5463022, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: -186, y: -6}
+        - {x: 1, y: -2}
+        - {x: 96, y: -124}
+        - {x: 186, y: -124}
+        - {x: 186, y: 124}
+        - {x: -186, y: 124}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: c56f6b71e27d41ef0800000000000000
       internalID: -138249095575308708
@@ -157,17 +163,17 @@ TextureImporter:
       name: DecorMenuButtons_1
       rect:
         serializedVersion: 2
-        x: 717
+        x: 683
         y: 963
-        width: 116
-        height: 136
+        width: 200
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: c3b96f90d4a3e2850800000000000000
       internalID: 6354080226820397884
@@ -179,17 +185,17 @@ TextureImporter:
       name: DecorMenuButtons_2
       rect:
         serializedVersion: 2
-        x: 673
-        y: 845
-        width: 172
-        height: 64
+        x: 660
+        y: 802
+        width: 200
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 150b0d320e251ccc0800000000000000
       internalID: -3692579096840064943

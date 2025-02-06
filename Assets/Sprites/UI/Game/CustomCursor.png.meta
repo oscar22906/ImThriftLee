@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 991e5a1d12f5d794d96a8889a9592c7d
+guid: 6dec225f7faecf545b9ed12c10e4886b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3092105695273519137
-    second: SprinklesAnim1_0
+      213: 8421725772212512862
+    second: CustomCursor_0
+  - first:
+      213: -4732851956479606416
+    second: CustomCursor_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +129,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SprinklesAnim1_0
+      name: CustomCursor_0
       rect:
         serializedVersion: 2
-        x: 957
-        y: 1329
-        width: 381
-        height: 524
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 143
+        y: 483
+        width: 400
+        height: 400
+      alignment: 9
+      pivot: {x: 0.16327266, y: 0.83836395}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1288db64fbd59ea20800000000000000
-      internalID: 3092105695273519137
+      spriteID: e58aa7838faffd470800000000000000
+      internalID: 8421725772212512862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CustomCursor_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 71
+        width: 400
+        height: 400
+      alignment: 9
+      pivot: {x: 0.08594177, y: 0.6644578}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0714587a838815eb0800000000000000
+      internalID: -4732851956479606416
       vertices: []
       indices: 
       edges: []
@@ -151,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 336e86d12d8a00e4c9becac89befe48d
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SprinklesAnim1_0: 3092105695273519137
+      CustomCursor_0: 8421725772212512862
+      CustomCursor_1: -4732851956479606416
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,6 +11,8 @@ public class ShopButton : MonoBehaviour, IInteractable
     [SerializeField] private float duration;
     [SerializeField] private float scaleFactor;
 
+    [SerializeField] private bool animateScale = true;
+
 
     public enum ButtonType
     {
@@ -21,12 +23,11 @@ public class ShopButton : MonoBehaviour, IInteractable
 
 
     private Transform buttonTransform;
-    private Vector3 originalScale;
+    [SerializeField] private Vector3 originalScale;
 
     private void Start()
     {
         buttonTransform = GetComponent<Transform>();
-        originalScale = buttonTransform.localScale;
     }
 
     public void AnimateScale(float duration, float scaleFactor, Transform tf)
@@ -48,7 +49,15 @@ public class ShopButton : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        AnimateScale(duration, scaleFactor, buttonTransform);
+        if (animateScale)
+        {
+            AnimateScale(duration, scaleFactor, buttonTransform);
+            return;
+        }
+        else
+        {
+            onButtonClick?.Invoke();
+        }
     }
 
     void AnimateComplete()

@@ -16,7 +16,11 @@ public class ShopManager : MonoBehaviour
 
     [SerializeField] private float minBlinkTime = 2f;
     [SerializeField] private float maxBlinkTime = 5f;
+
+    [SerializeField] private float minRolTime = 2f;
+    [SerializeField] private float maxRolTime = 5f;
     private Coroutine blinkCoroutine;
+    private Coroutine rolCoroutine;
 
     private void OnEnable()
     {
@@ -24,11 +28,13 @@ public class ShopManager : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         StartCoroutine(WaitToEnable());
         StartBlinking();
+        StartRolRoutine();
     }
 
     private void OnDisable()
     {
         StopBlinking();
+        StopRolRoutine();
     }
 
     [Button]
@@ -52,6 +58,7 @@ public class ShopManager : MonoBehaviour
         }
         ItemDisplay.Instance.OpenShop(shop);
         StartBlinking();
+        StartRolRoutine();
     }
 
     [Button]
@@ -70,6 +77,7 @@ public class ShopManager : MonoBehaviour
         }
         StartCoroutine(WaitToDisable());
         StopBlinking();
+        StopRolRoutine();
     }
 
     public void UpdateShop()
@@ -120,6 +128,23 @@ public class ShopManager : MonoBehaviour
         }
     }
 
+    private void StartRolRoutine()
+    {
+        if (rolCoroutine == null)
+        {
+            rolCoroutine = StartCoroutine(RolRoutine());
+        }
+    }
+
+    private void StopRolRoutine()
+    {
+        if (rolCoroutine != null)
+        {
+            StopCoroutine(rolCoroutine);
+            rolCoroutine = null;
+        }
+    }
+
     IEnumerator BlinkRoutine()
     {
         while (assets.activeSelf)
@@ -128,6 +153,18 @@ public class ShopManager : MonoBehaviour
             if (animator != null && assets.activeSelf)
             {
                 animator.SetTrigger("Blink");
+            }
+        }
+    }
+
+    IEnumerator RolRoutine()
+    {
+        while (assets.activeSelf)
+        {
+            yield return new WaitForSeconds(Random.Range(minRolTime, maxRolTime));
+            if (animator != null && assets.activeSelf)
+            {
+                animator.SetTrigger("Rol");
             }
         }
     }

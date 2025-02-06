@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorImage: {fileID: 0}
-  cursorOffset: {x: 0, y: 0}
+  cursorOffset: {x: 50, y: -25}
 --- !u!1 &5143876848587424984
 GameObject:
   m_ObjectHideFlags: 0

@@ -40,11 +40,13 @@ public class ElementManager : MonoBehaviour
 
     void OnHoverStart(IElement element)
     {
+        CursorManager.Instance?.HoverEnter();
         element.OnHoverEnter();
     }
 
     void OnHoverEnd(IElement element)
     {
+        CursorManager.Instance?.HoverExit();
         element.OnHoverExit();
     }
 }

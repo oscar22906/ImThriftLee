@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 991e5a1d12f5d794d96a8889a9592c7d
+guid: c1595e24f45529540b824f167598c8de
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3092105695273519137
-    second: SprinklesAnim1_0
+      213: -3885855864972440876
+    second: Backbutton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.61763376, y: 0.34897634}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 1195, y: 654, z: 707, w: 1278}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -77,7 +77,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SprinklesAnim1_0
+      name: Backbutton_0
       rect:
         serializedVersion: 2
-        x: 957
-        y: 1329
-        width: 381
-        height: 524
+        x: 1216
+        y: 676
+        width: 101
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1288db64fbd59ea20800000000000000
-      internalID: 3092105695273519137
+      spriteID: 4da03ffcdaaa21ac0800000000000000
+      internalID: -3885855864972440876
       vertices: []
       indices: 
       edges: []
@@ -151,8 +151,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SprinklesAnim1_0: 3092105695273519137
+      Backbutton_0: -3885855864972440876
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

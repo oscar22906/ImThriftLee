@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 991e5a1d12f5d794d96a8889a9592c7d
+guid: 157ca464979ff8b429239fd3a0ba8df1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3092105695273519137
-    second: SprinklesAnim1_0
+      213: 7938331820854900221
+    second: RolPose1.png_0005_Layer-1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -77,7 +77,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SprinklesAnim1_0
+      name: RolPose1.png_0005_Layer-1_0
       rect:
         serializedVersion: 2
-        x: 957
-        y: 1329
-        width: 381
-        height: 524
+        x: 59
+        y: 48
+        width: 419
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1288db64fbd59ea20800000000000000
-      internalID: 3092105695273519137
+      spriteID: df57c336bbe9a2e60800000000000000
+      internalID: 7938331820854900221
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SprinklesAnim1_0: 3092105695273519137
+      RolPose1.png_0005_Layer-1_0: 7938331820854900221
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

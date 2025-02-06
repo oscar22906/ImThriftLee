@@ -13,5 +13,161 @@ MonoBehaviour:
   m_Name: vHierarchy Data
   m_EditorClassIdentifier: 
   sceneDatasByGuid:
-    keys: []
-    values: []
+    keys:
+    - e82d9ce436088144ea07bba494f6052b
+    - 8c9cfa26abfee488c85f1582747f6a02
+    - 2b4870dde08c9054d9191cab9e6fbeed
+    values:
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1199422463-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-632174855-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-850336813-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-2076516266-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-97337331-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-727186642-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1106889311-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1790427948-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-450536524924761557-3647902629214777442
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-124128604-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-6776975980141314393-5383951548242048566
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1286299165-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1318618748-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1048183530-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1467658558-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-6244878791811425116-3647902629214777442
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-4851014808429585562-3647902629214777442
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1747503082-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-97092080-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-257248850-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-12909543-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-2123365501-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-7892408204265988920-2134623481316045675
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1009406520-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1285180106-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1552889201-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-303225809-0
+        values:
+        - iColor: 0
+          icon: BoxCollider Icon
+        - iColor: 1
+          icon: Canvas Icon
+        - iColor: 0
+          icon: PreMatQuad
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 1
+          icon: 
+        - iColor: 8
+          icon: 
+        - iColor: 9
+          icon: 
+        - iColor: 5
+          icon: 
+        - iColor: 0
+          icon: cs Script Icon
+        - iColor: 0
+          icon: AvatarMask On Icon
+        - iColor: 0
+          icon: AudioSource Icon
+        - iColor: 0
+          icon: BoxCollider Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: ScriptableObject Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: PreMatCube
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: PreMatQuad
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 4
+          icon: AvatarMask On Icon
+        - iColor: 9
+          icon: AvatarMask On Icon
+        - iColor: 9
+          icon: AvatarMask On Icon
+      goDatasByInstanceId:
+        keys: eed00000eccf000066d00000d2d1000036cf000020d00000d0d0000094d1000056b1ffff3ccf0000c2b1ffff04d1000008d1000098d000008212ffff3ab1ffff4cb1ffff8ad1000040ebfeff78cf000012cf0000e4d10000b2b1ffff86d00000c86effff48d10000d636fdff
+        values:
+        - iColor: 0
+          icon: BoxCollider Icon
+        - iColor: 1
+          icon: Canvas Icon
+        - iColor: 0
+          icon: PreMatQuad
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 1
+          icon: 
+        - iColor: 8
+          icon: 
+        - iColor: 9
+          icon: 
+        - iColor: 5
+          icon: 
+        - iColor: 0
+          icon: cs Script Icon
+        - iColor: 0
+          icon: AvatarMask On Icon
+        - iColor: 0
+          icon: AudioSource Icon
+        - iColor: 0
+          icon: BoxCollider Icon
+        - iColor: 0
+          icon: Camera Icon
+        - iColor: 0
+          icon: ScriptableObject Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: PreMatCube
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: PreMatQuad
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 4
+          icon: AvatarMask On Icon
+        - iColor: 9
+          icon: AvatarMask On Icon
+        - iColor: 9
+          icon: AvatarMask On Icon
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []

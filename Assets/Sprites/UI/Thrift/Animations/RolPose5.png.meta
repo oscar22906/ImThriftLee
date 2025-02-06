@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 991e5a1d12f5d794d96a8889a9592c7d
+guid: 8bdbc446260617a4785fb8c742ea7a9a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3092105695273519137
-    second: SprinklesAnim1_0
+      213: -5515965011398356206
+    second: RolPose1.png_0001_RolPose5_0
+  - first:
+      213: 4904091146391148542
+    second: RolPose1.png_0001_RolPose5_1
+  - first:
+      213: -7225438171720391284
+    second: RolPose1.png_0001_RolPose5_2
+  - first:
+      213: -525766234432807615
+    second: RolPose1.png_0001_RolPose5_3
+  - first:
+      213: 5879708901548516792
+    second: RolPose1.png_0001_RolPose5_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -77,7 +89,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SprinklesAnim1_0
+      name: RolPose1.png_0001_RolPose5_0
       rect:
         serializedVersion: 2
-        x: 957
-        y: 1329
-        width: 381
-        height: 524
+        x: 97
+        y: 88
+        width: 402
+        height: 503
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1288db64fbd59ea20800000000000000
-      internalID: 3092105695273519137
+      spriteID: 2131e160c0b5373b0800000000000000
+      internalID: -5515965011398356206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RolPose1.png_0001_RolPose5_1
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 79
+        width: 30
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef758c62ae4de0440800000000000000
+      internalID: 4904091146391148542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RolPose1.png_0001_RolPose5_2
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 87
+        width: 16
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85ee0cc3461abb90800000000000000
+      internalID: -7225438171720391284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RolPose1.png_0001_RolPose5_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 30
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ddcb9356a14b8f0800000000000000
+      internalID: -525766234432807615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RolPose1.png_0001_RolPose5_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 24
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5608b081ce89150800000000000000
+      internalID: 5879708901548516792
       vertices: []
       indices: 
       edges: []
@@ -151,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SprinklesAnim1_0: 3092105695273519137
+      RolPose1.png_0001_RolPose5_0: -5515965011398356206
+      RolPose1.png_0001_RolPose5_1: 4904091146391148542
+      RolPose1.png_0001_RolPose5_2: -7225438171720391284
+      RolPose1.png_0001_RolPose5_3: -525766234432807615
+      RolPose1.png_0001_RolPose5_4: 5879708901548516792
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

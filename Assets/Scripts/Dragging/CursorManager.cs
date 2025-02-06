@@ -9,6 +9,9 @@ public class CursorManager : MonoBehaviour
     public Image cursorImage;
     public Vector2 cursorOffset = Vector2.zero;
     private bool isCustomCursorActive = true;
+
+    private Animator animator;
+
     private void Awake()
     {
         if (Instance == null)
@@ -28,13 +31,23 @@ public class CursorManager : MonoBehaviour
         {
             Cursor.visible = false;
         }
+        animator = cursorImage?.gameObject.GetComponent<Animator>();
     }
 
     private void Update()
     {
         if (isCustomCursorActive)
         {
-            FollowMousePosition(); 
+            FollowMousePosition();
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            ButtonDown();
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            ButtonUp();
         }
     }
 
@@ -54,12 +67,30 @@ public class CursorManager : MonoBehaviour
     public void HideCursor()
     {
         isCustomCursorActive = false;
-        cursorImage.enabled = false; 
-        Cursor.visible = true;    
+        cursorImage.enabled = false;
+        Cursor.visible = true;
     }
 
     public void ChangeCursorSprite(Sprite newSprite)
     {
         cursorImage.sprite = newSprite;
+    }
+
+    public void HoverEnter()
+    {
+        animator?.SetBool("Hover", true);
+    }
+    public void HoverExit()
+    {
+        animator?.SetBool("Hover", false);
+    }
+    public void ButtonDown()
+    {
+        animator?.SetBool("Hover", false);
+        animator?.SetBool("ButtonDown", true);
+    }
+    public void ButtonUp()
+    {
+        animator?.SetBool("ButtonDown", false);
     }
 }
