@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: 06c529c1af934014496d7795be45b497
+guid: 0d9fb1b043d543141ba0e4b7548b65a7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2313622411020035007
-    second: RedPlasticSHOPICON_0
+      213: -6354098527018455598
+    second: BandShirtSHOPICON_0
   - first:
-      213: 3957342338073130868
-    second: RedPlasticSHOPICON_1
-  - first:
-      213: 6290495785146199478
-    second: RedPlasticSHOPICON_2
-  - first:
-      213: 8081814111755659808
-    second: RedPlasticSHOPICON_3
-  - first:
-      213: 7625987652696665636
-    second: RedPlasticSHOPICON_4
+      213: -8110354871913005992
+    second: BandShirtSHOPICON_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RedPlasticSHOPICON_0
+      name: BandShirtSHOPICON_1
       rect:
         serializedVersion: 2
-        x: 1355
-        y: 308
-        width: 191
-        height: 253
+        x: 1383
+        y: 337
+        width: 168
+        height: 236
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +144,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb36b312353ab1020800000000000000
-      internalID: 2313622411020035007
+      spriteID: 85c3449e63b327f80800000000000000
+      internalID: -8110354871913005992
       vertices: []
       indices: 
       edges: []
@@ -163,7 +154,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b93431b4b35b8ca4494731896100763f
+    spriteID: 3da106a7188c07f459e62ba191ace3b7
     internalID: 0
     vertices: []
     indices: 
@@ -173,11 +164,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RedPlasticSHOPICON_0: 2313622411020035007
-      RedPlasticSHOPICON_1: 3957342338073130868
-      RedPlasticSHOPICON_2: 6290495785146199478
-      RedPlasticSHOPICON_3: 8081814111755659808
-      RedPlasticSHOPICON_4: 7625987652696665636
+      BandShirtSHOPICON_0: -6354098527018455598
+      BandShirtSHOPICON_1: -8110354871913005992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

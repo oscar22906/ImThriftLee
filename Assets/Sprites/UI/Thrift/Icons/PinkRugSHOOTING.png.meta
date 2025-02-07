@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: aa224d89c18df4e4d88636db6737504b
+guid: 29589016b54430745aa8a53c62c2d1ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4620610943046356587
-    second: PinkRugSHOOTING_0
+      213: 7460957350642183993
+    second: PinkRugShooting 1_0
   - first:
-      213: -3126533791987421426
-    second: PinkRugSHOOTING_1
+      213: -5310572778822159429
+    second: PinkRugShooting 1_1
   - first:
-      213: 8921904534620451494
-    second: PinkRugSHOOTING_2
+      213: -4807533224891002465
+    second: PinkRugShooting 1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,12 +78,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -132,67 +132,82 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PinkRugSHOOTING_0
+      name: PinkRugShooting 1_0
       rect:
         serializedVersion: 2
-        x: 1177
-        y: 333
-        width: 168
-        height: 200
+        x: 456
+        y: 610
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b6e8f81fb25bf1040800000000000000
-      internalID: 4620610943046356587
+      spriteID: 93fed593e25aa8760800000000000000
+      internalID: 7460957350642183993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PinkRugSHOOTING_1
+      name: PinkRugShooting 1_1
       rect:
         serializedVersion: 2
-        x: 1384
-        y: 338
-        width: 197
-        height: 233
+        x: 681
+        y: 610
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: -125, y: -125}
+        - {x: 125, y: -125}
+        - {x: 94, y: -116}
+        - {x: 95, y: -77}
+        - {x: 106.430664, y: -52.614502}
+        - {x: 125, y: -47}
+        - {x: 125, y: 125}
+        - {x: -125, y: 125}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e0fa55ec4125c94d0800000000000000
-      internalID: -3126533791987421426
+      spriteID: bb3327cb13e0d46b0800000000000000
+      internalID: -5310572778822159429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PinkRugSHOOTING_2
+      name: PinkRugShooting 1_2
       rect:
         serializedVersion: 2
-        x: 1576
-        y: 331
-        width: 249
-        height: 152
+        x: 901
+        y: 611
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: -125, y: -40}
+        - {x: -116, y: -53}
+        - {x: -125, y: -77}
+        - {x: -125, y: -125}
+        - {x: 125, y: -125}
+        - {x: 125, y: 125}
+        - {x: -125, y: 125}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6a2bff967e8f0db70800000000000000
-      internalID: 8921904534620451494
+      spriteID: f91db7cd006384db0800000000000000
+      internalID: -4807533224891002465
       vertices: []
       indices: 
       edges: []
@@ -201,7 +216,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9c9cea81bf73c2b45afdb70c6d0da52b
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +226,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PinkRugSHOOTING_0: 4620610943046356587
-      PinkRugSHOOTING_1: -3126533791987421426
-      PinkRugSHOOTING_2: 8921904534620451494
+      PinkRugShooting 1_0: 7460957350642183993
+      PinkRugShooting 1_1: -5310572778822159429
+      PinkRugShooting 1_2: -4807533224891002465
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

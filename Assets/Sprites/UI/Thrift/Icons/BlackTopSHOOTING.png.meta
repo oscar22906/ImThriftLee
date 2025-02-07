@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 5ed2f696a940b474c9a2e51396c8e01d
+guid: 2a1b4881511a6b642b3b3b3318693c0e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3182156606942790935
-    second: BlackTopSHOOTING_0
+      213: -3368616958148964747
+    second: BlackTopShooting 1_0
   - first:
-      213: -8818740977733575624
-    second: BlackTopSHOOTING_1
+      213: 4307910785230927742
+    second: BlackTopShooting 1_1
   - first:
-      213: 7863532223006484887
-    second: BlackTopSHOOTING_2
+      213: 5750801104758567554
+    second: BlackTopShooting 1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,12 +78,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -132,67 +132,83 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlackTopSHOOTING_0
+      name: BlackTopShooting 1_0
       rect:
         serializedVersion: 2
-        x: 1212
-        y: 368
-        width: 161
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9ea338ffc65b6d3d0800000000000000
-      internalID: -3182156606942790935
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BlackTopSHOOTING_1
-      rect:
-        serializedVersion: 2
-        x: 1369
-        y: 330
+        x: 628
+        y: 1238
         width: 160
-        height: 111
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: -80, y: -60}
+        - {x: 80, y: -60}
+        - {x: 72, y: -40}
+        - {x: 80, y: -22}
+        - {x: 80, y: 60}
+        - {x: -80, y: 60}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 83c5200fdc98d9580800000000000000
-      internalID: -8818740977733575624
+      spriteID: 57e8c2969b44041d0800000000000000
+      internalID: -3368616958148964747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlackTopSHOOTING_2
+      name: BlackTopShooting 1_1
       rect:
         serializedVersion: 2
-        x: 1544
-        y: 376
-        width: 161
-        height: 111
+        x: 784
+        y: 1205
+        width: 160
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: -74, y: 21}
+        - {x: -80, y: 11}
+        - {x: -80, y: -60}
+        - {x: 80, y: -60}
+        - {x: 80, y: 60}
+        - {x: -80, y: 60}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 799a320e4e0e02d60800000000000000
-      internalID: 7863532223006484887
+      spriteID: e7773cde806c8cb30800000000000000
+      internalID: 4307910785230927742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackTopShooting 1_2
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1247
+        width: 160
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: -80, y: -60}
+        - {x: 80, y: -60}
+        - {x: 80, y: 60}
+        - {x: -80, y: 60}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282fe0fb223fecf40800000000000000
+      internalID: 5750801104758567554
       vertices: []
       indices: 
       edges: []
@@ -201,7 +217,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4537796dcc2e08e459bc1feb15e08f52
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +227,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BlackTopSHOOTING_0: -3182156606942790935
-      BlackTopSHOOTING_1: -8818740977733575624
-      BlackTopSHOOTING_2: 7863532223006484887
+      BlackTopShooting 1_0: -3368616958148964747
+      BlackTopShooting 1_1: 4307910785230927742
+      BlackTopShooting 1_2: 5750801104758567554
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

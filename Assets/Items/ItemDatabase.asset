@@ -16,35 +16,53 @@ MonoBehaviour:
   - itemID: blackTop
     itemName: Black Top
     itemIcon: {fileID: 7679118260052533764, guid: 2d75d1587cc31a742957a88bcb6b8f97, type: 3}
-    sprites: []
+    sprites:
+    - {fileID: 21300000, guid: 6db8018165f5fdb42805819cd3eefd27, type: 3}
+    shootIcons: []
     bodyPart: 1
+    outfitSet: 0
+    shop: 2
+  - itemID: craftPaper
+    itemName: Craft Paper
+    itemIcon: {fileID: -4561945730248601883, guid: f61b181223de25549a526699f6ed9ff7, type: 3}
+    sprites: []
+    shootIcons: []
+    bodyPart: 4
     outfitSet: 0
     shop: 2
   - itemID: bluePlastic
     itemName: Blue Plastic
     itemIcon: {fileID: -3602151603310072382, guid: 25ab94f4009522340a49bc9a9d35029c, type: 3}
-    sprites: []
-    bodyPart: 1
+    sprites:
+    - {fileID: 21300000, guid: 266f02753904e894aa82ea912d7c7ecb, type: 3}
+    shootIcons: []
+    bodyPart: 0
     outfitSet: 0
-    shop: 0
-  - itemID: craftPaper
-    itemName: Craft Paper
-    itemIcon: {fileID: -4561945730248601883, guid: f61b181223de25549a526699f6ed9ff7, type: 3}
-    sprites: []
-    bodyPart: 2
-    outfitSet: 0
-    shop: 0
-  - itemID: pinkRug
-    itemName: Pink Rug
-    itemIcon: {fileID: 6541885114641172871, guid: 2a1b9d68c50d47947811963599cecf41, type: 3}
-    sprites: []
-    bodyPart: 3
-    outfitSet: 0
-    shop: 0
+    shop: 1
   - itemID: redPlastic
     itemName: Red Plastic
     itemIcon: {fileID: 2313622411020035007, guid: 06c529c1af934014496d7795be45b497, type: 3}
-    sprites: []
-    bodyPart: 3
+    sprites:
+    - {fileID: 21300000, guid: 66c0a456b88e46746af1b03e5934d237, type: 3}
+    shootIcons: []
+    bodyPart: 0
+    outfitSet: 0
+    shop: 1
+  - itemID: pinkRug
+    itemName: Pink Rug
+    itemIcon: {fileID: 6541885114641172871, guid: 2a1b9d68c50d47947811963599cecf41, type: 3}
+    sprites:
+    - {fileID: 21300000, guid: ef2303c03b9f5384cb57f8947922721c, type: 3}
+    shootIcons: []
+    bodyPart: 1
+    outfitSet: 0
+    shop: 0
+  - itemID: bandShirt
+    itemName: Band Shirt
+    itemIcon: {fileID: -8110354871913005992, guid: 0d9fb1b043d543141ba0e4b7548b65a7, type: 3}
+    sprites:
+    - {fileID: 21300000, guid: 1dda9d365779a5746a9de4bf47af5143, type: 3}
+    shootIcons: []
+    bodyPart: 1
     outfitSet: 0
     shop: 0

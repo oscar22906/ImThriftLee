@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 64037cb3d555520478fcfe7c07c3ebbb
+guid: c2f5f1859057afd418e65c8f363a1b58
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3273863282961195
-    second: CraftPaperSHOOTING_0
+      213: -1943010829533595309
+    second: ConfettiShooting_0
   - first:
-      213: -3156657709269962346
-    second: CraftPaperSHOOTING_1
+      213: 8594518826725049321
+    second: ConfettiShooting_1
   - first:
-      213: 9205336132902114996
-    second: CraftPaperSHOOTING_2
+      213: 8784040153243387331
+    second: ConfettiShooting_2
   - first:
-      213: -4018266306265040773
-    second: CraftPaperSHOOTING_3
+      213: 7278042754752784009
+    second: ConfettiShooting_3
   - first:
-      213: -678593742649989875
-    second: CraftPaperSHOOTING_4
+      213: -2153061143960309526
+    second: ConfettiShooting_4
   - first:
-      213: 6681121407266125852
-    second: CraftPaperSHOOTING_5
+      213: 5040369674754209989
+    second: ConfettiShooting_5
   - first:
-      213: 1109611257969401089
-    second: CraftPaperSHOOTING_6
+      213: 6687179752221483587
+    second: ConfettiShooting_6
   - first:
-      213: -7853084261764325747
-    second: CraftPaperSHOOTING_7
+      213: -7924809364815874372
+    second: ConfettiShooting_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,12 +93,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -147,177 +147,97 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CraftPaperSHOOTING_0
+      name: ConfettiShooting_0
       rect:
         serializedVersion: 2
-        x: 1108
-        y: 301
-        width: 209
-        height: 156
+        x: 329
+        y: 992
+        width: 210
+        height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b2b2602bf81ab0000800000000000000
-      internalID: 3273863282961195
+      spriteID: 359b9eee1f90905e0800000000000000
+      internalID: -1943010829533595309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CraftPaperSHOOTING_1
+      name: ConfettiShooting_1
       rect:
         serializedVersion: 2
-        x: 1325
-        y: 296
-        width: 205
-        height: 146
+        x: 546
+        y: 991
+        width: 210
+        height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6913771c98c4134d0800000000000000
-      internalID: -3156657709269962346
+      spriteID: 9e38a52565dd54770800000000000000
+      internalID: 8594518826725049321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CraftPaperSHOOTING_2
+      name: ConfettiShooting_4
       rect:
         serializedVersion: 2
-        x: 1553
-        y: 293
-        width: 76
-        height: 72
+        x: 762
+        y: 991
+        width: 210
+        height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b6d2bfd07cefbf70800000000000000
-      internalID: 9205336132902114996
+      spriteID: ae0bc860c4ace12e0800000000000000
+      internalID: -2153061143960309526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CraftPaperSHOOTING_3
+      name: ConfettiShooting_6
       rect:
         serializedVersion: 2
-        x: 1596
-        y: 357
-        width: 73
-        height: 69
+        x: 949
+        y: 973
+        width: 210
+        height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: -105, y: 40}
+        - {x: -80, y: 20}
+        - {x: -85, y: -3}
+        - {x: -105, y: -31}
+        - {x: -105, y: -105}
+        - {x: 105, y: -105}
+        - {x: 105, y: 105}
+        - {x: -105, y: 105}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b78b62a85104c38c0800000000000000
-      internalID: -4018266306265040773
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CraftPaperSHOOTING_4
-      rect:
-        serializedVersion: 2
-        x: 1653
-        y: 290
-        width: 94
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d056b8e16962596f0800000000000000
-      internalID: -678593742649989875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CraftPaperSHOOTING_5
-      rect:
-        serializedVersion: 2
-        x: 1753
-        y: 288
-        width: 76
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c18fa55958c18bc50800000000000000
-      internalID: 6681121407266125852
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CraftPaperSHOOTING_6
-      rect:
-        serializedVersion: 2
-        x: 1796
-        y: 352
-        width: 73
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10d5a066f81266f00800000000000000
-      internalID: 1109611257969401089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CraftPaperSHOOTING_7
-      rect:
-        serializedVersion: 2
-        x: 1837
-        y: 287
-        width: 76
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d8e935aa87d340390800000000000000
-      internalID: -7853084261764325747
+      spriteID: 342a850fd82adcc50800000000000000
+      internalID: 6687179752221483587
       vertices: []
       indices: 
       edges: []
@@ -326,7 +246,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b12c8562a7fedd046b5f5d5487cf69a7
     internalID: 0
     vertices: []
     indices: 
@@ -336,14 +256,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CraftPaperSHOOTING_0: 3273863282961195
-      CraftPaperSHOOTING_1: -3156657709269962346
-      CraftPaperSHOOTING_2: 9205336132902114996
-      CraftPaperSHOOTING_3: -4018266306265040773
-      CraftPaperSHOOTING_4: -678593742649989875
-      CraftPaperSHOOTING_5: 6681121407266125852
-      CraftPaperSHOOTING_6: 1109611257969401089
-      CraftPaperSHOOTING_7: -7853084261764325747
+      ConfettiShooting_0: -1943010829533595309
+      ConfettiShooting_1: 8594518826725049321
+      ConfettiShooting_4: -2153061143960309526
+      ConfettiShooting_6: 6687179752221483587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

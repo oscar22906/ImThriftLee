@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 4fae1dd6b98b57647842d7a479a835fd
+guid: 4a06228a21a41704cb5573810dc6b375
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2560020990836926777
-    second: BandShirtSHOOTING_0
+      213: -57250755978259005
+    second: BandShirtShooting 1_0
   - first:
-      213: 6709865266765059616
-    second: BandShirtSHOOTING_1
+      213: -5507667193160186456
+    second: BandShirtShooting 1_1
   - first:
-      213: 8830244557757424996
-    second: BandShirtSHOOTING_2
+      213: -899318815529767478
+    second: BandShirtShooting 1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,12 +78,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -132,67 +132,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BandShirtSHOOTING_0
+      name: BandShirtShooting 1_0
       rect:
         serializedVersion: 2
-        x: 1244
-        y: 348
-        width: 148
-        height: 138
+        x: 153
+        y: 1204
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c61f9fe87af87cd0800000000000000
-      internalID: -2560020990836926777
+      spriteID: 3c51bc2adba943ff0800000000000000
+      internalID: -57250755978259005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BandShirtSHOOTING_1
+      name: BandShirtShooting 1_1
       rect:
         serializedVersion: 2
-        x: 1421
-        y: 349
-        width: 117
-        height: 138
+        x: 316
+        y: 1203
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0265344e8ea3e1d50800000000000000
-      internalID: 6709865266765059616
+      spriteID: 8a54d926ed5d093b0800000000000000
+      internalID: -5507667193160186456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BandShirtSHOOTING_2
+      name: BandShirtShooting 1_2
       rect:
         serializedVersion: 2
-        x: 1581
-        y: 380
-        width: 113
-        height: 104
+        x: 475
+        y: 1203
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46525f004a45b8a70800000000000000
-      internalID: 8830244557757424996
+      spriteID: acde5845d4af483f0800000000000000
+      internalID: -899318815529767478
       vertices: []
       indices: 
       edges: []
@@ -201,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9371d9d2129b7a84f9a057a119abdcaa
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BandShirtSHOOTING_0: -2560020990836926777
-      BandShirtSHOOTING_1: 6709865266765059616
-      BandShirtSHOOTING_2: 8830244557757424996
+      BandShirtShooting 1_0: -57250755978259005
+      BandShirtShooting 1_1: -5507667193160186456
+      BandShirtShooting 1_2: -899318815529767478
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - CursorManager
   - OneShot
+  - Bedroom
+  - Decor
+  - Shelf
   layers:
   - Default
   - TransparentFX

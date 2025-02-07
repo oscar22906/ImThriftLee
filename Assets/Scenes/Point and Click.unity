@@ -718,6 +718,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1286299166}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &79962168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 79962169}
+  - component: {fileID: 79962170}
+  m_Layer: 0
+  m_Name: DecorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &79962169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79962168}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1467536450}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &79962170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79962168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f71259844c02f428391c9c2d6f1f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bedroomSprites: []
+  decorSprites: []
+  shelfSprites: []
 --- !u!1 &97092080
 GameObject:
   m_ObjectHideFlags: 0
@@ -3270,7 +3317,7 @@ GameObject:
   - component: {fileID: 518694061}
   m_Layer: 5
   m_Name: Bedroom
-  m_TagString: Untagged
+  m_TagString: Bedroom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4202,7 +4249,7 @@ GameObject:
   - component: {fileID: 676661816}
   m_Layer: 5
   m_Name: Decor Right
-  m_TagString: Untagged
+  m_TagString: Decor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4885,7 +4932,8 @@ MonoBehaviour:
   welcomeClips: []
   purchaseClips: []
   minigameCompleteClips: []
-  goodbyeClips: []
+  goodbyeClips:
+  - {fileID: 8300000, guid: 620cea9b56ca2274e907c0d1e808d8f9, type: 3}
   minBlinkTime: 2.5
   maxBlinkTime: 6
   minRolTime: 2
@@ -9269,7 +9317,7 @@ Transform:
   m_GameObject: {fileID: 1285180106}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.03333945, w: 0.9994441}
-  m_LocalPosition: {x: -1.29, y: -0.21, z: 89.93839}
+  m_LocalPosition: {x: -1.29, y: -0.21, z: -5}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -10545,6 +10593,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1467536450 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6559655701040001912, guid: 4b23e9760d53cb345b85e883031ea505, type: 3}
+  m_PrefabInstance: {fileID: 3647902629214777442}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1467658558
 GameObject:
   m_ObjectHideFlags: 0
@@ -11332,7 +11385,7 @@ GameObject:
   - component: {fileID: 1583820078}
   m_Layer: 5
   m_Name: Shelf Decor
-  m_TagString: Untagged
+  m_TagString: Shelf
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14381,6 +14434,14 @@ PrefabInstance:
       propertyPath: cursorImage
       value: 
       objectReference: {fileID: 508026740}
+    - target: {fileID: 587590317825720813, guid: 4b23e9760d53cb345b85e883031ea505, type: 3}
+      propertyPath: cursorOffset.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 587590317825720813, guid: 4b23e9760d53cb345b85e883031ea505, type: 3}
+      propertyPath: cursorOffset.y
+      value: -15
+      objectReference: {fileID: 0}
     - target: {fileID: 2222819712687524548, guid: 4b23e9760d53cb345b85e883031ea505, type: 3}
       propertyPath: debug
       value: 
@@ -14427,7 +14488,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6559655701040001912, guid: 4b23e9760d53cb345b85e883031ea505, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 79962169}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b23e9760d53cb345b85e883031ea505, type: 3}
 --- !u!1001 &5383951548242048566

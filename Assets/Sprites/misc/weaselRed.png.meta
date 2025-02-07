@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      weaselRed_0: -581138654965930273
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

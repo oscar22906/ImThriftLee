@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: bf781c42ddc46904fb15d07218bc31ec
+guid: 102c2e36461760447b6201ea7f63080e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -23183144021704033
-    second: BluePlasticSHOOTING_0
+      213: -555794567196791092
+    second: BluePlasticShooting 1_0
   - first:
-      213: 1867901256423739855
-    second: BluePlasticSHOOTING_1
+      213: 3204761849406703999
+    second: BluePlasticShooting 1_1
   - first:
-      213: 4590848984787751466
-    second: BluePlasticSHOOTING_2
+      213: 6360090223232657412
+    second: BluePlasticShooting 1_2
   - first:
-      213: -3468688484174368483
-    second: BluePlasticSHOOTING_3
+      213: -6975968655030162459
+    second: BluePlasticShooting 1_3
   - first:
-      213: -8913447691074562157
-    second: BluePlasticSHOOTING_4
+      213: -6133614417830077205
+    second: BluePlasticShooting 1_4
   - first:
-      213: -2524721805341030503
-    second: BluePlasticSHOOTING_5
+      213: -1862911103766672705
+    second: BluePlasticShooting 1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -87,12 +87,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -141,133 +141,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BluePlasticSHOOTING_0
+      name: BluePlasticShooting 1_0
       rect:
         serializedVersion: 2
-        x: 1238
-        y: 339
-        width: 101
-        height: 117
+        x: 300
+        y: 866
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f924fc7ad03adaff0800000000000000
-      internalID: -23183144021704033
+      spriteID: ccea42e29cb6948f0800000000000000
+      internalID: -555794567196791092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BluePlasticSHOOTING_1
+      name: BluePlasticShooting 1_3
       rect:
         serializedVersion: 2
-        x: 1414
-        y: 415
-        width: 32
-        height: 21
+        x: 575
+        y: 837
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc194a0db4e1ce910800000000000000
-      internalID: 1867901256423739855
+      spriteID: 5ebeaa0f771603f90800000000000000
+      internalID: -6975968655030162459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BluePlasticSHOOTING_2
+      name: BluePlasticShooting_0
       rect:
         serializedVersion: 2
-        x: 1888
-        y: 435
-        width: 65
-        height: 31
+        x: 442
+        y: 841
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a229cbb04d8f5bf30800000000000000
-      internalID: 4590848984787751466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BluePlasticSHOOTING_3
-      rect:
-        serializedVersion: 2
-        x: 1398
-        y: 354
-        width: 64
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d117c48933ebcdfc0800000000000000
-      internalID: -3468688484174368483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BluePlasticSHOOTING_4
-      rect:
-        serializedVersion: 2
-        x: 1514
-        y: 325
-        width: 92
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3979979ec821d4480800000000000000
-      internalID: -8913447691074562157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BluePlasticSHOOTING_5
-      rect:
-        serializedVersion: 2
-        x: 1382
-        y: 306
-        width: 94
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99707f305e266fcd0800000000000000
-      internalID: -2524721805341030503
+      spriteID: d1642b90e76ca3044b7e9f1ecabf0db9
+      internalID: -985014513
       vertices: []
       indices: 
       edges: []
@@ -276,7 +210,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a8c58ce5543e7be41be265719ec6c5e2
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +220,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BluePlasticSHOOTING_0: -23183144021704033
-      BluePlasticSHOOTING_1: 1867901256423739855
-      BluePlasticSHOOTING_2: 4590848984787751466
-      BluePlasticSHOOTING_3: -3468688484174368483
-      BluePlasticSHOOTING_4: -8913447691074562157
-      BluePlasticSHOOTING_5: -2524721805341030503
+      BluePlasticShooting 1_0: -555794567196791092
+      BluePlasticShooting 1_1: 3204761849406703999
+      BluePlasticShooting 1_2: 6360090223232657412
+      BluePlasticShooting 1_3: -6975968655030162459
+      BluePlasticShooting 1_4: -6133614417830077205
+      BluePlasticShooting 1_5: -1862911103766672705
+      BluePlasticShooting_0: -985014513
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

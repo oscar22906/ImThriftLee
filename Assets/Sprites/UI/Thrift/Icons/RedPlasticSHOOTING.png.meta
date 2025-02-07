@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: b26965b37269dac408400cd28cd5d294
+guid: 409247d6ddeac954d9fbf254cafb8106
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1080124571623415083
-    second: RedPlasticSHOOTING_0
+      213: -6368133846512257150
+    second: RedPlasticShooting 1_0
   - first:
-      213: -6778467547990138667
-    second: RedPlasticSHOOTING_1
+      213: 6563088180375121789
+    second: RedPlasticShooting 1_1
   - first:
-      213: -5112705789564102894
-    second: RedPlasticSHOOTING_2
+      213: -2197755834593407268
+    second: RedPlasticShooting 1_2
   - first:
-      213: -8118007448584216685
-    second: RedPlasticSHOOTING_3
+      213: 8508918073092085784
+    second: RedPlasticShooting 1_3
   - first:
-      213: -8120202845656001487
-    second: RedPlasticSHOOTING_4
+      213: 3286939891280199743
+    second: RedPlasticShooting 1_4
+  - first:
+      213: -2168190440221205984
+    second: RedPlasticShooting 1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,12 +87,12 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -138,111 +141,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RedPlasticSHOOTING_0
+      name: RedPlasticShooting 1_0
       rect:
         serializedVersion: 2
-        x: 1238
-        y: 339
-        width: 101
-        height: 117
+        x: 731
+        y: 857
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d22733cc60a201f0800000000000000
-      internalID: -1080124571623415083
+      spriteID: 287be74a108df97a0800000000000000
+      internalID: -6368133846512257150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedPlasticSHOOTING_1
+      name: RedPlasticShooting 1_1
       rect:
         serializedVersion: 2
-        x: 1414
-        y: 415
-        width: 32
-        height: 21
+        x: 876
+        y: 831
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d0e880ddab0ee1a0800000000000000
-      internalID: -6778467547990138667
+      spriteID: d7fe2d46de5c41b50800000000000000
+      internalID: 6563088180375121789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedPlasticSHOOTING_2
+      name: RedPlasticShooting 1_3
       rect:
         serializedVersion: 2
-        x: 1398
-        y: 354
-        width: 64
-        height: 59
+        x: 1008
+        y: 824
+        width: 150
+        height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 217d2f33c250c09b0800000000000000
-      internalID: -5112705789564102894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RedPlasticSHOOTING_3
-      rect:
-        serializedVersion: 2
-        x: 1514
-        y: 325
-        width: 92
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39f992f8c3b075f80800000000000000
-      internalID: -8118007448584216685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RedPlasticSHOOTING_4
-      rect:
-        serializedVersion: 2
-        x: 1382
-        y: 306
-        width: 94
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 134de88d88e3f4f80800000000000000
-      internalID: -8120202845656001487
+      spriteID: 8181e81c7efb51670800000000000000
+      internalID: 8508918073092085784
       vertices: []
       indices: 
       edges: []
@@ -251,7 +210,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 37890110ea3b7b048a2ab0df2d72965f
     internalID: 0
     vertices: []
     indices: 
@@ -261,11 +220,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RedPlasticSHOOTING_0: -1080124571623415083
-      RedPlasticSHOOTING_1: -6778467547990138667
-      RedPlasticSHOOTING_2: -5112705789564102894
-      RedPlasticSHOOTING_3: -8118007448584216685
-      RedPlasticSHOOTING_4: -8120202845656001487
+      RedPlasticShooting 1_0: -6368133846512257150
+      RedPlasticShooting 1_1: 6563088180375121789
+      RedPlasticShooting 1_2: -2197755834593407268
+      RedPlasticShooting 1_3: 8508918073092085784
+      RedPlasticShooting 1_4: 3286939891280199743
+      RedPlasticShooting 1_5: -2168190440221205984
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

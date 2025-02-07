@@ -79,6 +79,7 @@ public class Clothing
     public string itemName;
     public Sprite itemIcon;
     public Sprite[] sprites; // all animation frames for the item in order
+    public Sprite[] shootIcons;
 
     [SerializeField] private BodyPart bodyPart;
     [SerializeField] private OutfitSet outfitSet;
@@ -99,7 +100,8 @@ public enum BodyPart
     Accessories,
     Torso,
     Legs,
-    Feet
+    Feet,
+    Misc
 }
 
 public enum Shop
