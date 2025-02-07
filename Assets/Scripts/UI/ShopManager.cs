@@ -1,9 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 using VInspector;
 
 public class ShopManager : MonoBehaviour
 {
+    public bool rol = false;
+
     IUIAnimate[] iUIAnimates;
     Animator animator;
     public float disableDelay;
@@ -14,6 +17,13 @@ public class ShopManager : MonoBehaviour
 
     bool disabling = false;
 
+    public AudioSource audioSource;
+
+    public AudioClip[] welcomeClips;
+    public AudioClip[] purchaseClips;
+    public AudioClip[] minigameCompleteClips;
+    public AudioClip[] goodbyeClips;
+
     [SerializeField] private float minBlinkTime = 2f;
     [SerializeField] private float maxBlinkTime = 5f;
 
@@ -22,8 +32,11 @@ public class ShopManager : MonoBehaviour
     private Coroutine blinkCoroutine;
     private Coroutine rolCoroutine;
 
+
     private void OnEnable()
     {
+        ItemDisplay.OnItemPurchased += PlayPurchaseSound;
+        RipMinigame.OnMinigameEnd += PlayMinigameCompleteSound;
         iUIAnimates = GetComponentsInChildren<IUIAnimate>();
         animator = GetComponentInChildren<Animator>();
         StartCoroutine(WaitToEnable());
@@ -33,8 +46,11 @@ public class ShopManager : MonoBehaviour
 
     private void OnDisable()
     {
+        ItemDisplay.OnItemPurchased -= PlayPurchaseSound;
+        RipMinigame.OnMinigameEnd -= PlayMinigameCompleteSound;
         StopBlinking();
-        StopRolRoutine();
+        if (rol)
+            StopRolRoutine();
     }
 
     [Button]
@@ -45,7 +61,6 @@ public class ShopManager : MonoBehaviour
             print("Can't show, being disabled");
             return;
         }
-        print("Showing shop");
         MapManager.Instance.DisableColliders();
         assets.SetActive(true);
         foreach (IUIAnimate anim in iUIAnimates)
@@ -58,7 +73,8 @@ public class ShopManager : MonoBehaviour
         }
         ItemDisplay.Instance.OpenShop(shop);
         StartBlinking();
-        StartRolRoutine();
+        if (rol)
+            StartRolRoutine();
     }
 
     [Button]
@@ -166,6 +182,21 @@ public class ShopManager : MonoBehaviour
             {
                 animator.SetTrigger("Rol");
             }
+        }
+    }
+    public void PlayWelcomeSound() => PlayRandomClip(welcomeClips);
+
+    public void PlayPurchaseSound() => PlayRandomClip(purchaseClips);
+    public void PlayMinigameCompleteSound() => PlayRandomClip(minigameCompleteClips);
+
+    public void PlayGoodbyeSound() => PlayRandomClip(goodbyeClips);
+
+    private void PlayRandomClip(AudioClip[] clips)
+    {
+        if (clips.Length > 0 && audioSource != null)
+        {
+            audioSource.Stop();
+            audioSource.PlayOneShot(clips[Random.Range(0, clips.Length)]);
         }
     }
 }

@@ -2,6 +2,7 @@ using UnityEngine;
 using DG.Tweening;
 using System.Collections.Generic;
 using VInspector;
+using System;
 
 public class ItemDisplay : MonoBehaviour
 {
@@ -21,6 +22,10 @@ public class ItemDisplay : MonoBehaviour
     [SerializeField] private float period;
 
     [SerializeField] private GameObject ripMinigameTarget;
+
+    public static event Action OnItemPurchased;
+
+    private SpriteRenderer newDisplay;
     private void Awake()
     {
         if (Instance == null)
@@ -52,11 +57,17 @@ public class ItemDisplay : MonoBehaviour
 
     public void CloseShop()
     {
+        DOTween.Kill(itemDisplay.transform);
+        if (newDisplay != null)
+            DOTween.Kill(newDisplay.gameObject);
+        isTweening = false;
+        newDisplay.DOFade(0, 1f);
         itemDisplay.DOFade(0, 1f).OnComplete(() =>
         {
             availableItems.Clear();
         });
     }
+
 
     [Button]
     public void ScrollLeft()
@@ -65,6 +76,7 @@ public class ItemDisplay : MonoBehaviour
         isTweening = true;
 
         SpriteRenderer newItem = Instantiate(itemDisplay, originalPosition + Vector3.left * 10, Quaternion.identity);
+        newDisplay = newItem;
         newItem.sprite = availableItems[(currentIndex - 1 + availableItems.Count) % availableItems.Count].itemIcon;
         newItem.color = new Color(1, 1, 1, 1); // Ensure visibility
 
@@ -87,6 +99,7 @@ public class ItemDisplay : MonoBehaviour
         isTweening = true;
 
         SpriteRenderer newItem = Instantiate(itemDisplay, originalPosition + Vector3.right * 10, Quaternion.identity);
+        newDisplay = newItem;
         newItem.sprite = availableItems[(currentIndex + 1) % availableItems.Count].itemIcon;
         newItem.color = new Color(1, 1, 1, 1); // Ensure visibility
 
@@ -128,6 +141,8 @@ public class ItemDisplay : MonoBehaviour
             {
                 minigameScript.SetupMinigame(itemToBuy);
             }
+
+            OnItemPurchased?.Invoke();
 
             if (availableItems.Count > 0)
             {

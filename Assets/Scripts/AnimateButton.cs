@@ -20,6 +20,10 @@ public class AnimateButton : MonoBehaviour, IInteractable
         buttonTransform = GetComponent<Transform>();
         originalScale = buttonTransform.localScale;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        if (!isInteractable)
+        {
+            DisableButton();
+        }
     }
 
     public void AnimateScale(float duration, float scaleFactor, Transform tf)

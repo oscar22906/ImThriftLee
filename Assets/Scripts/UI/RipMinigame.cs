@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using System;
 
 public class RipMinigame : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class RipMinigame : MonoBehaviour
     private int currentAudioIndex = 0;
     private Clothing currentItem;
     private List<GameObject> spawnedTargets = new List<GameObject>();
+
+    public static event Action OnMinigameEnd;
 
     private void OnEnable()
     {
@@ -47,8 +50,8 @@ public class RipMinigame : MonoBehaviour
         }
 
         Bounds bounds = iconDisplay.bounds;
-        float randomX = Random.Range(bounds.min.x, bounds.max.x);
-        float randomY = Random.Range(bounds.min.y, bounds.max.y);
+        float randomX = UnityEngine.Random.Range(bounds.min.x, bounds.max.x);
+        float randomY = UnityEngine.Random.Range(bounds.min.y, bounds.max.y);
 
         Vector3 spawnPosition = new Vector3(randomX, randomY, 0);
         GameObject newTarget = Instantiate(targetPrefab, spawnPosition, Quaternion.identity, transform);
@@ -75,7 +78,7 @@ public class RipMinigame : MonoBehaviour
 
         if (tearPrefabs.Length > 0)
         {
-            GameObject tear = Instantiate(tearPrefabs[Random.Range(0, tearPrefabs.Length)], position, Quaternion.identity, transform);
+            GameObject tear = Instantiate(tearPrefabs[UnityEngine.Random.Range(0, tearPrefabs.Length)], position, Quaternion.identity, transform);
             tear.transform.DOScale(Vector3.one * 1.2f, 0.2f).SetEase(Ease.OutBounce);
         }
 
@@ -84,6 +87,7 @@ public class RipMinigame : MonoBehaviour
 
     private void EndMinigame()
     {
+        OnMinigameEnd?.Invoke();
         foreach (GameObject target in spawnedTargets)
         {
             if (target) Destroy(target);

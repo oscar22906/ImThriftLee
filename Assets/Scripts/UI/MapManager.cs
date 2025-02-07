@@ -54,7 +54,6 @@ public class MapManager : MonoBehaviour
             redShop.UpdateShop();
             orangeShop.UpdateShop();
         }
-        print("hurayy");
         shop.ShowShop();
     }
     [Button]

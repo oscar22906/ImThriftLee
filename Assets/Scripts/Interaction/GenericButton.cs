@@ -18,7 +18,6 @@ public class GenericButton : MonoBehaviour, IInteractable
     {
         if (onButtonClick != null)
         {
-            print("interact");
             onButtonClick.Invoke();
         }
     }

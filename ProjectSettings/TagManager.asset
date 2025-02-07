@@ -55,6 +55,9 @@ TagManager:
   - name: ShopTop
     uniqueID: 2715377743
     locked: 0
+  - name: Sticker
+    uniqueID: 428372523
+    locked: 0
   m_RenderingLayers:
   - Default
   - ShopUI

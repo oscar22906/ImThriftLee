@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: ee04119f582bf0d469e6de18a76d2523
+guid: 5ed2f696a940b474c9a2e51396c8e01d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1709797333011830158
-    second: StickerBinWIP_0
+      213: -3182156606942790935
+    second: BlackTopSHOOTING_0
   - first:
-      213: 9020395713269654788
-    second: StickerBinWIP_1
+      213: -8818740977733575624
+    second: BlackTopSHOOTING_1
+  - first:
+      213: 7863532223006484887
+    second: BlackTopSHOOTING_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,11 +52,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.045011118, y: 0.06834315}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -80,7 +83,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -129,45 +132,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StickerBinWIP_0
+      name: BlackTopSHOOTING_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 12
-        width: 1812
-        height: 1226
+        x: 1212
+        y: 368
+        width: 161
+        height: 111
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8594109d9b6ab710800000000000000
-      internalID: 1709797333011830158
+      spriteID: 9ea338ffc65b6d3d0800000000000000
+      internalID: -3182156606942790935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StickerBinWIP_1
+      name: BlackTopSHOOTING_1
       rect:
         serializedVersion: 2
-        x: 101
-        y: 260
-        width: 18
-        height: 10
+        x: 1369
+        y: 330
+        width: 160
+        height: 111
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 405e4eeeb12ee2d70800000000000000
-      internalID: 9020395713269654788
+      spriteID: 83c5200fdc98d9580800000000000000
+      internalID: -8818740977733575624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackTopSHOOTING_2
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 376
+        width: 161
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 799a320e4e0e02d60800000000000000
+      internalID: 7863532223006484887
       vertices: []
       indices: 
       edges: []
@@ -176,8 +201,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: 
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -186,8 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      StickerBinWIP_0: 1709797333011830158
-      StickerBinWIP_1: 9020395713269654788
+      BlackTopSHOOTING_0: -3182156606942790935
+      BlackTopSHOOTING_1: -8818740977733575624
+      BlackTopSHOOTING_2: 7863532223006484887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

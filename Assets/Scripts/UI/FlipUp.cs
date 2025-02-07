@@ -22,11 +22,6 @@ public class FlipUp : MonoBehaviour, IUIAnimate
             materials.Add(spriteRenderer.material);
         }
     }
-    private void Start()
-    {
-
-    }
-
     public void AnimateEnable()
     {
         AnimateFadeIn(fadeDuration);
