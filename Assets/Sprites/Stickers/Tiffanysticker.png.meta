@@ -129,17 +129,21 @@ TextureImporter:
       name: Tiffanysticker_0
       rect:
         serializedVersion: 2
-        x: 490
-        y: 299
-        width: 252
-        height: 400
+        x: 325
+        y: 158
+        width: 595
+        height: 643
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: -297.5, y: -321.5}
+        - {x: 297.5, y: -321.5}
+        - {x: 297.5, y: 321.5}
+        - {x: -297.5, y: 321.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 0a820bc4997a3a240800000000000000
       internalID: 4801865904565528736

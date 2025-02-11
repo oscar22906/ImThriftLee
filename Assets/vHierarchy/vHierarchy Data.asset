@@ -50,6 +50,7 @@ MonoBehaviour:
         - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-908158973-0
         - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-2143599908-0
         - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1024454937-0
+        - GlobalObjectId_V1-2-e82d9ce436088144ea07bba494f6052b-1481703729-0
         values:
         - iColor: 0
           icon: BoxCollider Icon
@@ -109,10 +110,12 @@ MonoBehaviour:
           icon: BoxCollider Icon
         - iColor: 0
           icon: 
+        - iColor: 0
+          icon: BoxCollider Icon
         - iColor: 0
           icon: BoxCollider Icon
       goDatasByInstanceId:
-        keys: eed00000eccf000066d00000d2d1000036cf000020d00000d0d0000094d1000056b1ffff3ccf0000c2b1ffff04d1000008d1000098d000008212ffff3ab1ffff4cb1ffff8ad1000040ebfeff78cf000012cf0000e4d10000b2b1ffff86d00000c86effff48d10000d636fdff5856fdfff8d10000e023fcff
+        keys: 10b00000e0ae00005caf000058b10000fead00001eaf0000dcaf0000feb00000e6faffff04ae0000a6faffff3eb0000042b00000aeaf00008ab00000c2faffffdcfafffff4b00000f8ad000042ae0000c6ad00006ab100008efaffff94af000030b00000b2b0000058ae000060af000088b100009caf0000aa56ffff
         values:
         - iColor: 0
           icon: BoxCollider Icon
@@ -172,6 +175,8 @@ MonoBehaviour:
           icon: BoxCollider Icon
         - iColor: 0
           icon: 
+        - iColor: 0
+          icon: BoxCollider Icon
         - iColor: 0
           icon: BoxCollider Icon
     - goDatasByGlobalId:

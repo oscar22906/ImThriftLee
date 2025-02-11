@@ -32,6 +32,8 @@ public class ShopManager : MonoBehaviour
     private Coroutine blinkCoroutine;
     private Coroutine rolCoroutine;
 
+    private bool isEnabled = false;
+
 
     private void OnEnable()
     {
@@ -61,6 +63,8 @@ public class ShopManager : MonoBehaviour
             print("Can't show, being disabled");
             return;
         }
+        MapManager.Instance.currentShop = this;
+        isEnabled = true;
         MapManager.Instance.DisableColliders();
         assets.SetActive(true);
         foreach (IUIAnimate anim in iUIAnimates)
@@ -82,6 +86,7 @@ public class ShopManager : MonoBehaviour
     {
         if (disabling)
             return;
+        isEnabled = false;
         MapManager.Instance.EnableColliders();
         if (animator != null)
         {
@@ -112,6 +117,21 @@ public class ShopManager : MonoBehaviour
         {
             if (!MapManager.Instance.IsBlueShopEnabled)
                 HideShop();
+        }
+    }
+    public void EnableButtonColliders()
+    {
+        foreach (Collider2D collider in GetComponentsInChildren<Collider2D>())
+        {
+            collider.enabled = true;
+        }
+        GetComponent<Collider2D>().enabled = false;
+    }
+    public void DisableButtonColliders()
+    {
+        foreach (Collider2D collider in GetComponentsInChildren<Collider2D>())
+        {
+            collider.enabled = false;
         }
     }
     IEnumerator WaitToEnable()
@@ -193,6 +213,8 @@ public class ShopManager : MonoBehaviour
 
     private void PlayRandomClip(AudioClip[] clips)
     {
+        if (!isEnabled && clips != goodbyeClips)
+            return;
         if (clips.Length > 0 && audioSource != null)
         {
             audioSource.Stop();

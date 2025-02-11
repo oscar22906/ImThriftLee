@@ -13,56 +13,200 @@ MonoBehaviour:
   m_Name: ItemDatabase
   m_EditorClassIdentifier: 
   allItems:
+  - itemID: noShirt
+    itemName: No Shirt
+    itemIcon: {fileID: 0}
+    sprites:
+    - {fileID: 0}
+    shootIcons: []
+    bodyPart: 1
+    outfitSet: 0
+    shop: 0
+    ownershipType: 0
+  - itemID: noLegs
+    itemName: No Legs
+    itemIcon: {fileID: 0}
+    sprites:
+    - {fileID: 0}
+    shootIcons: []
+    bodyPart: 2
+    outfitSet: 0
+    shop: 0
+    ownershipType: 0
+  - itemID: noShoes
+    itemName: No Shoes
+    itemIcon: {fileID: 0}
+    sprites:
+    - {fileID: 0}
+    shootIcons: []
+    bodyPart: 3
+    outfitSet: 0
+    shop: 0
+    ownershipType: 0
+  - itemID: noAccessory
+    itemName: No Accessory
+    itemIcon: {fileID: 0}
+    sprites:
+    - {fileID: 0}
+    shootIcons: []
+    bodyPart: 0
+    outfitSet: 0
+    shop: 0
+    ownershipType: 0
   - itemID: blackTop
     itemName: Black Top
     itemIcon: {fileID: 7679118260052533764, guid: 2d75d1587cc31a742957a88bcb6b8f97, type: 3}
     sprites:
     - {fileID: 21300000, guid: 6db8018165f5fdb42805819cd3eefd27, type: 3}
-    shootIcons: []
+    shootIcons:
+    - {fileID: -3368616958148964747, guid: 2a1b4881511a6b642b3b3b3318693c0e, type: 3}
+    - {fileID: 4307910785230927742, guid: 2a1b4881511a6b642b3b3b3318693c0e, type: 3}
+    - {fileID: 5750801104758567554, guid: 2a1b4881511a6b642b3b3b3318693c0e, type: 3}
     bodyPart: 1
     outfitSet: 0
     shop: 2
+    ownershipType: 1
   - itemID: craftPaper
     itemName: Craft Paper
     itemIcon: {fileID: -4561945730248601883, guid: f61b181223de25549a526699f6ed9ff7, type: 3}
     sprites: []
-    shootIcons: []
+    shootIcons:
+    - {fileID: -1943010829533595309, guid: c2f5f1859057afd418e65c8f363a1b58, type: 3}
+    - {fileID: 8594518826725049321, guid: c2f5f1859057afd418e65c8f363a1b58, type: 3}
+    - {fileID: 6687179752221483587, guid: c2f5f1859057afd418e65c8f363a1b58, type: 3}
     bodyPart: 4
     outfitSet: 0
     shop: 2
+    ownershipType: 1
   - itemID: bluePlastic
     itemName: Blue Plastic
     itemIcon: {fileID: -3602151603310072382, guid: 25ab94f4009522340a49bc9a9d35029c, type: 3}
     sprites:
     - {fileID: 21300000, guid: 266f02753904e894aa82ea912d7c7ecb, type: 3}
-    shootIcons: []
+    shootIcons:
+    - {fileID: -555794567196791092, guid: 102c2e36461760447b6201ea7f63080e, type: 3}
+    - {fileID: -6975968655030162459, guid: 102c2e36461760447b6201ea7f63080e, type: 3}
+    - {fileID: -985014513, guid: 102c2e36461760447b6201ea7f63080e, type: 3}
     bodyPart: 0
     outfitSet: 0
     shop: 1
+    ownershipType: 1
   - itemID: redPlastic
     itemName: Red Plastic
     itemIcon: {fileID: 2313622411020035007, guid: 06c529c1af934014496d7795be45b497, type: 3}
     sprites:
     - {fileID: 21300000, guid: 66c0a456b88e46746af1b03e5934d237, type: 3}
-    shootIcons: []
+    shootIcons:
+    - {fileID: -6368133846512257150, guid: 409247d6ddeac954d9fbf254cafb8106, type: 3}
+    - {fileID: 6563088180375121789, guid: 409247d6ddeac954d9fbf254cafb8106, type: 3}
+    - {fileID: 8508918073092085784, guid: 409247d6ddeac954d9fbf254cafb8106, type: 3}
     bodyPart: 0
     outfitSet: 0
     shop: 1
+    ownershipType: 1
   - itemID: pinkRug
     itemName: Pink Rug
     itemIcon: {fileID: 6541885114641172871, guid: 2a1b9d68c50d47947811963599cecf41, type: 3}
     sprites:
-    - {fileID: 21300000, guid: ef2303c03b9f5384cb57f8947922721c, type: 3}
-    shootIcons: []
+    - {fileID: 21300000, guid: 1dda9d365779a5746a9de4bf47af5143, type: 3}
+    shootIcons:
+    - {fileID: 7460957350642183993, guid: 29589016b54430745aa8a53c62c2d1ae, type: 3}
+    - {fileID: -5310572778822159429, guid: 29589016b54430745aa8a53c62c2d1ae, type: 3}
+    - {fileID: -4807533224891002465, guid: 29589016b54430745aa8a53c62c2d1ae, type: 3}
     bodyPart: 1
     outfitSet: 0
     shop: 0
+    ownershipType: 1
   - itemID: bandShirt
     itemName: Band Shirt
     itemIcon: {fileID: -8110354871913005992, guid: 0d9fb1b043d543141ba0e4b7548b65a7, type: 3}
     sprites:
-    - {fileID: 21300000, guid: 1dda9d365779a5746a9de4bf47af5143, type: 3}
+    - {fileID: 21300000, guid: ef2303c03b9f5384cb57f8947922721c, type: 3}
+    shootIcons:
+    - {fileID: -57250755978259005, guid: 4a06228a21a41704cb5573810dc6b375, type: 3}
+    - {fileID: -5507667193160186456, guid: 4a06228a21a41704cb5573810dc6b375, type: 3}
+    - {fileID: -899318815529767478, guid: 4a06228a21a41704cb5573810dc6b375, type: 3}
+    bodyPart: 1
+    outfitSet: 0
+    shop: 0
+    ownershipType: 1
+  - itemID: accessories1
+    itemName: Accessories 1
+    itemIcon: {fileID: 0}
+    sprites:
+    - {fileID: 21300000, guid: c2f657f394ea3cf47ab158fdbc7743ab, type: 3}
+    shootIcons: []
+    bodyPart: 0
+    outfitSet: 0
+    shop: 0
+    ownershipType: 0
+  - itemID: accessories2
+    itemName: Accessories 2
+    itemIcon: {fileID: 0}
+    sprites:
+    - {fileID: 21300000, guid: 14fd1fff7ec100040b1527f1523e7d24, type: 3}
+    shootIcons: []
+    bodyPart: 0
+    outfitSet: 0
+    shop: 0
+    ownershipType: 0
+  - itemID: greyJacket
+    itemName: Grey Jacket
+    itemIcon: {fileID: 0}
+    sprites:
+    - {fileID: 21300000, guid: 9fca954e03444f44faa2ab365b13403b, type: 3}
     shootIcons: []
     bodyPart: 1
     outfitSet: 0
     shop: 0
+    ownershipType: 0
+  - itemID: greySkirt
+    itemName: Grey Skirt
+    itemIcon: {fileID: 0}
+    sprites:
+    - {fileID: 21300000, guid: e1e07a8282bec98448b60cb0b8aa5b18, type: 3}
+    shootIcons: []
+    bodyPart: 2
+    outfitSet: 0
+    shop: 0
+    ownershipType: 0
+  - itemID: greyTrousers
+    itemName: Grey Trousers
+    itemIcon: {fileID: 0}
+    sprites:
+    - {fileID: 21300000, guid: 3d4b98a8611d66745a0fc49ede482b81, type: 3}
+    shootIcons: []
+    bodyPart: 2
+    outfitSet: 0
+    shop: 0
+    ownershipType: 0
+  - itemID: redJacket
+    itemName: Red Jacket
+    itemIcon: {fileID: 0}
+    sprites:
+    - {fileID: 21300000, guid: 61865e77ac8c0b643bb76c85e2dbf12b, type: 3}
+    shootIcons: []
+    bodyPart: 1
+    outfitSet: 0
+    shop: 0
+    ownershipType: 0
+  - itemID: redSkirt
+    itemName: Red Skirt
+    itemIcon: {fileID: 0}
+    sprites:
+    - {fileID: 21300000, guid: 020a2266c90e52f409ed78cdd5ff53d3, type: 3}
+    shootIcons: []
+    bodyPart: 2
+    outfitSet: 0
+    shop: 0
+    ownershipType: 0
+  - itemID: rippedShirt
+    itemName: Ripped Shirt
+    itemIcon: {fileID: 0}
+    sprites:
+    - {fileID: 21300000, guid: 6db8018165f5fdb42805819cd3eefd27, type: 3}
+    shootIcons: []
+    bodyPart: 1
+    outfitSet: 0
+    shop: 0
+    ownershipType: 0

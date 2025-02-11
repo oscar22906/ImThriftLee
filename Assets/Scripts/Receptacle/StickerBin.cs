@@ -1,8 +1,14 @@
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
+using System;
 
 public class StickerBin : MonoBehaviour, IReceptacle
 {
+    [SerializeField] private GameObject[] stickers;
+
+    [SerializeField] private GameObject stickerSpawnPoint;
     public static StickerBin Instance { get; private set; }
 
     private Animator animator;
@@ -55,4 +61,19 @@ public class StickerBin : MonoBehaviour, IReceptacle
         }
     }
 
+    public void SpitOutSticker()
+    {
+        if (stickers.Length > 0)
+        {
+            animator.SetBool("Dragging", true);
+            StartCoroutine(AnimateSpit());
+            Instantiate(stickers[UnityEngine.Random.Range(0, stickers.Length)], stickerSpawnPoint.transform.position, stickerSpawnPoint.transform.rotation);
+        }
+    }
+
+    private IEnumerator AnimateSpit()
+    {
+        yield return new WaitForSeconds(0.5f);
+        animator.SetBool("Dragging", false);
+    }
 }

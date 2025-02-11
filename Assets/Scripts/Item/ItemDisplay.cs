@@ -132,26 +132,28 @@ public class ItemDisplay : MonoBehaviour
 
         if (success)
         {
-            availableItems = itemDatabase.GetUnownedItemsByShop(itemToBuy.GetShop());
-
-            GameObject minigameInstance = Instantiate(ripMinigameTarget, transform.position, Quaternion.identity);
-            RipMinigame minigameScript = minigameInstance.GetComponent<RipMinigame>();
-
-            if (minigameScript != null)
-            {
-                minigameScript.SetupMinigame(itemToBuy);
-            }
-
-            OnItemPurchased?.Invoke();
-
-            if (availableItems.Count > 0)
-            {
-                UpdateDisplay();
-            }
+            StartMinigame(itemToBuy);
         }
         else
         {
             Debug.Log("Item already owned or purchase failed.");
         }
+    }
+    private void StartMinigame(Clothing item)
+    {
+        GameObject minigameInstance = Instantiate(ripMinigameTarget, transform.position, Quaternion.identity);
+        RipMinigame minigameScript = minigameInstance.GetComponent<RipMinigame>();
+
+        if (minigameScript != null)
+        {
+            minigameScript.SetupMinigame(item);
+        }
+    }
+    public void OnMinigameSuccess(Clothing item)
+    {
+        availableItems = itemDatabase.GetUnownedItemsByShop(item.GetShop());
+        OnItemPurchased?.Invoke();
+
+        UpdateDisplay();
     }
 }

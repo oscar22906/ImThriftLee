@@ -9,44 +9,31 @@ public class ItemDatabase : ScriptableObject
 
     private const string SaveKey = "OwnedItems";
 
-    public void Initialize()
-    {
-        LoadItems();
-    }
+    public void Initialize() => LoadItems();
 
     public bool PurchaseItem(Clothing item)
     {
-        if (item == null || ownedItems.Contains(item.itemID)) return false;
+        if (item == null || item.ownershipType == OwnershipType.DefaultOwned || ownedItems.Contains(item.itemID)) return false;
 
         ownedItems.Add(item.itemID);
         SaveItems();
         return true;
     }
 
-    public bool OwnsItem(Clothing item)
-    {
-        return item != null && ownedItems.Contains(item.itemID);
-    }
+    public bool OwnsItem(Clothing item) =>
+        item != null && (item.ownershipType == OwnershipType.DefaultOwned || ownedItems.Contains(item.itemID));
 
-    public List<Clothing> GetOwnedItems()
-    {
-        return allItems.FindAll(item => item != null && ownedItems.Contains(item.itemID));
-    }
+    public List<Clothing> GetOwnedItems() =>
+        allItems.FindAll(item => item != null && OwnsItem(item));
 
-    public List<Clothing> GetUnownedItems()
-    {
-        return allItems.FindAll(item => item != null && !ownedItems.Contains(item.itemID));
-    }
+    public List<Clothing> GetUnownedItems() =>
+        allItems.FindAll(item => item != null && item.ownershipType == OwnershipType.ShopItem && !ownedItems.Contains(item.itemID));
 
-    public List<Clothing> GetUnownedItemsByShop(Shop shop)
-    {
-        return allItems.FindAll(item => item != null && !ownedItems.Contains(item.itemID) && item.GetShop() == shop);
-    }
+    public List<Clothing> GetUnownedItemsByShop(Shop shop) =>
+        allItems.FindAll(item => item != null && item.ownershipType == OwnershipType.ShopItem && !ownedItems.Contains(item.itemID) && item.GetShop() == shop);
 
-    public List<Clothing> GetOwnedItemsByShop(Shop shop)
-    {
-        return allItems.FindAll(item => item != null && ownedItems.Contains(item.itemID) && item.GetShop() == shop);
-    }
+    public List<Clothing> GetOwnedItemsByShop(Shop shop) =>
+        allItems.FindAll(item => item != null && OwnsItem(item) && item.GetShop() == shop);
 
     private void SaveItems()
     {
@@ -78,16 +65,24 @@ public class Clothing
     public string itemID;
     public string itemName;
     public Sprite itemIcon;
-    public Sprite[] sprites; // all animation frames for the item in order
+    public Sprite[] sprites;
     public Sprite[] shootIcons;
 
     [SerializeField] private BodyPart bodyPart;
     [SerializeField] private OutfitSet outfitSet;
     [SerializeField] private Shop shop;
+    [SerializeField] public OwnershipType ownershipType;
 
     public BodyPart GetBodyPart() => bodyPart;
     public OutfitSet GetOutfitSet() => outfitSet;
     public Shop GetShop() => shop;
+    public OwnershipType GetOwnershipType() => ownershipType;
+}
+
+public enum OwnershipType
+{
+    DefaultOwned,
+    ShopItem
 }
 
 public enum OutfitSet

@@ -1,6 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
 using VInspector;
-
 public class MapManager : MonoBehaviour
 {
     public static MapManager Instance { get; private set; }
@@ -13,8 +13,10 @@ public class MapManager : MonoBehaviour
     private bool isOrangeShopEnabled;
     private bool isBlueShopEnabled;
 
-    ShopManager currentShop;
+    [HideInInspector]
+    public ShopManager currentShop;
 
+    private List<Collider2D> colliders = new List<Collider2D>();
     private void Awake()
     {
         if (Instance == null)
@@ -26,6 +28,9 @@ public class MapManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+        colliders.AddRange(redShop?.GetComponentsInChildren<Collider2D>());
+        colliders.AddRange(orangeShop?.GetComponentsInChildren<Collider2D>());
+        colliders.AddRange(blueShop?.GetComponentsInChildren<Collider2D>());
     }
 
     public bool IsRedShopEnabled => isRedShopEnabled;
@@ -100,4 +105,19 @@ public class MapManager : MonoBehaviour
 
     [Button]
     public void ActivateBlueShop() => EnableShop(blueShop);
+
+    public void EnableAllCollider()
+    {
+        foreach (Collider2D collider in colliders)
+        {
+            collider.enabled = true;
+        }
+    }
+    public void DisableAllCollider()
+    {
+        foreach (Collider2D collider in colliders)
+        {
+            collider.enabled = false;
+        }
+    }
 }

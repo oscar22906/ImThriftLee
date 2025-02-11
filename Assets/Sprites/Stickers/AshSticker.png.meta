@@ -129,17 +129,21 @@ TextureImporter:
       name: AshSticker_0
       rect:
         serializedVersion: 2
-        x: 239
-        y: 281
-        width: 559
-        height: 377
+        x: 50
+        y: 143
+        width: 965
+        height: 658
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: -482.5, y: -329}
+        - {x: 482.5, y: -329}
+        - {x: 482.5, y: 329}
+        - {x: -482.5, y: 329}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 33bf130b9144c0c90800000000000000
       internalID: -7202306826951328973
@@ -151,7 +155,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e7d98d4038ade541acec5c0117ae8d8
     internalID: 0
     vertices: []
     indices: 

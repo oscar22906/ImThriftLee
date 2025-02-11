@@ -191,28 +191,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ConfettiShooting_4
-      rect:
-        serializedVersion: 2
-        x: 762
-        y: 991
-        width: 210
-        height: 210
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae0bc860c4ace12e0800000000000000
-      internalID: -2153061143960309526
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ConfettiShooting_6
       rect:
         serializedVersion: 2
